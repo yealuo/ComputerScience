@@ -3,10 +3,7 @@
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "./",
   "spellcheck": false,
-  "spellcheckLanguages": [
-    "zh-CN",
-    "en"
-  ],
+  "spellcheckLanguages": null,
   "promptDelete": false,
   "showLineNumber": true,
   "showInlineTitle": true,
@@ -17,5 +14,7 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "readableLineLength": false
+  "readableLineLength": false,
+  "defaultViewMode": "preview",
+  "focusNewTab": true
 }
