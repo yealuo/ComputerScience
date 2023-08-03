@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "c4493a11932104a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1000c1bf83bfe72",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c8266a79432959bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机网络/第4章 网络层/03 网际协议：IPv4、寻址、IPv6及其他.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a1f0e4fb69921c11",
+    "type": "split",
+    "children": [
+      {
+        "id": "98f1b89a6184075e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d1ba2dadf8308cc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2eaf803c653c8a10",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "440483d7b432b681",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "ad17dd049d8c65af",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "6026adf28d48c74e",
+    "type": "split",
+    "children": [
+      {
+        "id": "1e8b8692349cd036",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05e3f86c224ffb7c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "计算机网络/第4章 网络层/03 网际协议：IPv4、寻址、IPv6及其他.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "aa25cf22c9c6d385",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "计算机网络/第4章 网络层/03 网际协议：IPv4、寻址、IPv6及其他.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0143e6edbcf0db8b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "46950dea3494c97e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "计算机网络/第4章 网络层/03 网际协议：IPv4、寻址、IPv6及其他.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "audio-recorder:开始/结束录音": false
+    }
+  },
+  "active": "c8266a79432959bd",
+  "lastOpenFiles": [
+    "计算机网络/第4章 网络层/03 路由器的工作原理.md",
+    "计算机网络/第4章 网络层/02 虚电路和数据报网络.md",
+    "计算机网络/第4章 网络层/01 网络层概述.md",
+    "计算机网络/第3章 运输层/07 TCP 拥塞控制.md",
+    "计算机网络/第3章 运输层/06 拥塞控制原理.md",
+    "计算机网络/第3章 运输层/05 面向连接的传输——TCP.md",
+    "计算机网络/第3章 运输层/04 可靠数据传输原理.md",
+    "计算机网络/第3章 运输层/03 无连接传输：UDP.md",
+    "计算机网络/第3章 运输层/02 多路复用和多路分解.md",
+    "计算机网络/第3章 运输层/01 运输层服务.md",
+    "计算机网络/第2章 应用层/05 DNS（英特网的目录服务）.md",
+    "计算机网络/第2章 应用层/04 因特网中的电子邮件 SMTP,POP3,IMAP.md",
+    "计算机网络/第2章 应用层/02 Web应用和HTTP协议.md",
+    "计算机网络/第1章 计算机网络和Internet/第一章总结及复习大纲.md",
+    "计算机网络/第1章 计算机网络和Internet/08 攻击威胁下的网络.md",
+    "计算机网络/第1章 计算机网络和Internet/07 协议层及其服务模型.md",
+    "计算机网络/第1章 计算机网络和Internet/06 分组交换网络中的延迟、丢失和吞吐量.md",
+    "计算机网络/第1章 计算机网络和Internet/05 Internet 主干 or ISP 的结构组成.md",
+    "计算机网络/第1章 计算机网络和Internet/04 网络核心部分.md",
+    "计算机网络/第1章 计算机网络和Internet/03 网络边缘部分.md",
+    "计算机网络/第1章 计算机网络和Internet/02 什么是Internet.md",
+    "计算机网络/第5章 链路层/06 VLAN.md",
+    "计算机网络/第5章 链路层/05 链路层交换机.md",
+    "计算机网络/第5章 链路层/04 交换局域网.md",
+    "计算机网络/第5章 链路层/03 多路访问链路和协议.md",
+    "计算机网络/第5章 链路层/02 差错检测和纠错.md",
+    "计算机网络/第5章 链路层",
+    "计算机网络/第4章 网络层",
+    "计算机网络/第3章 运输层",
+    "计算机网络/第2章 应用层",
+    "计算机网络/第1章 计算机网络和Internet",
+    "计算机网络",
+    "日记",
+    "新建文件夹",
+    "模板"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./",
+  "spellcheck": false,
+  "spellcheckLanguages": [
+    "zh-CN",
+    "en"
+  ],
+  "promptDelete": false,
+  "showLineNumber": true,
+  "showInlineTitle": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "readableLineLength": false
+}
