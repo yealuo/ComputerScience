@@ -1419,14 +1419,14 @@ var require_dist = __commonJS({
 __export(exports, {
   default: () => LatexSuitePlugin
 });
-var import_obsidian7 = __toModule(require("obsidian"));
+var import_obsidian8 = __toModule(require("obsidian"));
 
 // src/settings.ts
-var import_obsidian6 = __toModule(require("obsidian"));
-var import_view9 = __toModule(require("@codemirror/view"));
-var import_state7 = __toModule(require("@codemirror/state"));
+var import_obsidian7 = __toModule(require("obsidian"));
+var import_view8 = __toModule(require("@codemirror/view"));
+var import_state8 = __toModule(require("@codemirror/state"));
 
-// src/snippets_editor/extensions.ts
+// src/ui/snippets_editor/extensions.ts
 var import_view3 = __toModule(require("@codemirror/view"));
 var import_state2 = __toModule(require("@codemirror/state"));
 
@@ -4371,14 +4371,14 @@ var autoCloseTags = /* @__PURE__ */ import_view.EditorView.inputHandler.of((view
   return true;
 });
 
-// src/snippets_editor/extensions.ts
+// src/ui/snippets_editor/extensions.ts
 var import_language3 = __toModule(require("@codemirror/language"));
 var import_commands = __toModule(require("@codemirror/commands"));
 var import_autocomplete2 = __toModule(require("@codemirror/autocomplete"));
 var import_search = __toModule(require("@codemirror/search"));
 var import_lint = __toModule(require("@codemirror/lint"));
 
-// src/snippets_editor/obsidian_theme.ts
+// src/ui/snippets_editor/obsidian_theme.ts
 var import_view2 = __toModule(require("@codemirror/view"));
 var import_language2 = __toModule(require("@codemirror/language"));
 var import_highlight2 = __toModule(require("@lezer/highlight"));
@@ -4483,7 +4483,7 @@ var obsidian = [
   (0, import_language2.syntaxHighlighting)(obsidianHighlightStyle)
 ];
 
-// src/snippets_editor/extensions.ts
+// src/ui/snippets_editor/extensions.ts
 var basicSetup = [
   (0, import_view3.lineNumbers)(),
   (0, import_view3.highlightSpecialChars)(),
@@ -4515,12 +4515,12 @@ var basicSetup = [
 var DEFAULT_SNIPPETS = '[    \n    // Math mode\n    {trigger: "mk", replacement: "$$0$", options: "tA"},\n    {trigger: "dm", replacement: "$$\\n$0\\n$$", options: "tAw"},\n    {trigger: "beg", replacement: "\\\\begin{$0}\\n$1\\n\\\\end{$0}", options: "mA"},\n\n\n    // Dashes\n    // {trigger: "--", replacement: "\u2013", options: "tA"},\n    // {trigger: "\u2013-", replacement: "\u2014", options: "tA"},\n    // {trigger: "\u2014-", replacement: "---", options: "tA"},\n\n\n    // Greek letters\n    {trigger: "@a", replacement: "\\\\alpha", options: "mA"},\n    {trigger: "@A", replacement: "\\\\alpha", options: "mA"},\n    {trigger: "@b", replacement: "\\\\beta", options: "mA"},\n    {trigger: "@B", replacement: "\\\\beta", options: "mA"},\n    {trigger: "@c", replacement: "\\\\chi", options: "mA"},\n    {trigger: "@C", replacement: "\\\\chi", options: "mA"},\n    {trigger: "@g", replacement: "\\\\gamma", options: "mA"},\n    {trigger: "@G", replacement: "\\\\Gamma", options: "mA"},\n    {trigger: "@d", replacement: "\\\\delta", options: "mA"},\n    {trigger: "@D", replacement: "\\\\Delta", options: "mA"},\n    {trigger: "@e", replacement: "\\\\epsilon", options: "mA"},\n    {trigger: "@E", replacement: "\\\\epsilon", options: "mA"},\n    {trigger: ":e", replacement: "\\\\varepsilon", options: "mA"},\n    {trigger: ":E", replacement: "\\\\varepsilon", options: "mA"},\n    {trigger: "@z", replacement: "\\\\zeta", options: "mA"},\n    {trigger: "@Z", replacement: "\\\\zeta", options: "mA"},\n    {trigger: "@t", replacement: "\\\\theta", options: "mA"},\n    {trigger: "@T", replacement: "\\\\Theta", options: "mA"},\n    {trigger: "@k", replacement: "\\\\kappa", options: "mA"},\n    {trigger: "@K", replacement: "\\\\kappa", options: "mA"},\n    {trigger: "@l", replacement: "\\\\lambda", options: "mA"},\n    {trigger: "@L", replacement: "\\\\Lambda", options: "mA"},\n    {trigger: "@m", replacement: "\\\\mu", options: "mA"},\n    {trigger: "@M", replacement: "\\\\mu", options: "mA"},\n    {trigger: "@r", replacement: "\\\\rho", options: "mA"},\n    {trigger: "@R", replacement: "\\\\rho", options: "mA"},\n    {trigger: "@s", replacement: "\\\\sigma", options: "mA"},\n    {trigger: "@S", replacement: "\\\\Sigma", options: "mA"},\n    {trigger: "ome", replacement: "\\\\omega", options: "mA"},\n    {trigger: "@o", replacement: "\\\\omega", options: "mA"},\n    {trigger: "@O", replacement: "\\\\Omega", options: "mA"},\n    {trigger: "([^\\\\\\\\])(${GREEK}|${SYMBOL})", replacement: "[[0]]\\\\[[1]]", options: "rmA", description: "Add backslash before greek letters and symbols"},\n\n\n    // Insert space after greek letters and symbols, etc\n    {trigger: "\\\\\\\\(${GREEK}|${SYMBOL}|${SHORT_SYMBOL})([A-Za-z])", replacement: "\\\\[[0]] [[1]]", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK}|${SYMBOL}) sr", replacement: "\\\\[[0]]^{2}", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK}|${SYMBOL}) cb", replacement: "\\\\[[0]]^{3}", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK}|${SYMBOL}) rd", replacement: "\\\\[[0]]^{$0}$1", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK}|${SYMBOL}) hat", replacement: "\\\\hat{\\\\[[0]]}", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK}|${SYMBOL}) dot", replacement: "\\\\dot{\\\\[[0]]}", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK}|${SYMBOL}) bar", replacement: "\\\\bar{\\\\[[0]]}", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK}|${SYMBOL}) vec", replacement: "\\\\vec{\\\\[[0]]}", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK}|${SYMBOL}) tilde", replacement: "\\\\tilde{\\\\[[0]]}", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK}|${SYMBOL}) und", replacement: "\\\\underline{\\\\[[0]]}", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK}),\\\\.", replacement: "\\\\boldsymbol{\\\\[[0]]}", options: "rmA"},\n    {trigger: "\\\\\\\\(${GREEK})\\\\.,", replacement: "\\\\boldsymbol{\\\\[[0]]}", options: "rmA"},\n\n\n    // Operations\n    {trigger: "te", replacement: "\\\\text{$0}", options: "m"},\n    {trigger: "text", replacement: "\\\\text{$0}", options: "mA"},\n    {trigger: "bf", replacement: "\\\\mathbf{$0}", options: "mA"},\n    {trigger: "sr", replacement: "^{2}", options: "mA"},\n    {trigger: "cb", replacement: "^{3}", options: "mA"},\n    {trigger: "rd", replacement: "^{$0}$1", options: "mA"},\n    {trigger: "_", replacement: "_{$0}$1", options: "mA"},\n    {trigger: "sts", replacement: "_\\\\text{$0}", options: "rmA"},\n    {trigger: "sq", replacement: "\\\\sqrt{ $0 }$1", options: "mA"},\n    {trigger: "//", replacement: "\\\\frac{$0}{$1}$2", options: "mA"},\n    {trigger: "ee", replacement: "e^{ $0 }$1", options: "mA"},\n    {trigger: "rm", replacement: "\\\\mathrm{$0}$1", options: "mA"},\n    {trigger: "conj", replacement: "^{*}", options: "mA"},\n    {trigger: "trace", replacement: "\\\\mathrm{Tr}", options: "mA"},\n    {trigger: "det", replacement: "\\\\det", options: "mA"},\n    {trigger: "re", replacement: "\\\\mathrm{Re}", options: "mA"},\n    {trigger: "im", replacement: "\\\\mathrm{Im}", options: "mA"},\n\n    {trigger: "([a-zA-Z]),\\\\.", replacement: "\\\\mathbf{[[0]]}", options: "rmA"},\n    {trigger: "([a-zA-Z])\\\\.,", replacement: "\\\\mathbf{[[0]]}", options: "rmA"},\n    {trigger: "([A-Za-z])(\\\\d)", replacement: "[[0]]_{[[1]]}", options: "rmA", description: "Auto letter subscript", priority: -1},\n    {trigger: "([A-Za-z])_(\\\\d\\\\d)", replacement: "[[0]]_{[[1]]}", options: "rmA"},\n    {trigger: "\\\\hat{([A-Za-z])}(\\\\d)", replacement: "hat{[[0]]}_{[[1]]}", options: "rmA"},\n    {trigger: "\\\\\\\\mathbf{([A-Za-z])}(\\\\d)", replacement: "\\\\mathbf{[[0]]}_{[[1]]}", options: "rmA"},\n    {trigger: "\\\\\\\\vec{([A-Za-z])}(\\\\d)", replacement: "\\\\vec{[[0]]}_{[[1]]}", options: "rmA"},\n    {trigger: "([a-zA-Z])bar", replacement: "\\\\bar{[[0]]}", options: "rmA"},\n    {trigger: "([a-zA-Z])hat", replacement: "\\\\hat{[[0]]}", options: "rmA"},\n    {trigger: "([a-zA-Z])ddot", replacement: "\\\\ddot{[[0]]}", options: "rmA", priority: 3},\n    {trigger: "([a-zA-Z])dot", replacement: "\\\\dot{[[0]]}", options: "rmA", priority: 1},\n    {trigger: "([a-zA-Z])vec", replacement: "\\\\vec{[[0]]}", options: "rmA"},\n    {trigger: "([a-zA-Z])tilde", replacement: "\\\\tilde{[[0]]}", options: "rmA"},\n    {trigger: "([a-zA-Z])und", replacement: "\\\\underline{[[0]]}", options: "rmA"},\n    {trigger: "bar", replacement: "\\\\bar{$0}$1", options: "mA"},\n    {trigger: "hat", replacement: "\\\\hat{$0}$1", options: "mA"},\n    {trigger: "dot", replacement: "\\\\dot{$0}$1", options: "mA"},\n    {trigger: "ddot", replacement: "\\\\ddot{$0}$1", options: "mA", priority: 2},\n    {trigger: "vec", replacement: "\\\\vec{$0}$1", options: "mA"},\n    {trigger: "tilde", replacement: "\\\\tilde{$0}$1", options: "mA"},\n    {trigger: "und", replacement: "\\\\underline{$0}$1", options: "mA"},\n\n    {trigger: "([^\\\\\\\\])(arcsin|arccos|arctan|arccot|arccsc|arcsec|sin|cos|tan|cot|csc)", replacement: "[[0]]\\\\[[1]]", options: "rmA"},\n    {trigger: "\\\\\\\\(arcsin|arccos|arctan|arccot|arccsc|arcsec|sin|cos|tan|cot|csc)([A-Za-gi-z])", replacement: "\\\\[[0]] [[1]]", options: "rmA"}, // Insert space after trig funcs. Skips letter "h" to allow sinh, cosh, etc.\n    {trigger: "\\\\\\\\(arcsinh|arccosh|arctanh|arccoth|arcsch|arcsech|sinh|cosh|tanh|coth|csch)([A-Za-z])", replacement: "\\\\[[0]] [[1]]", options: "rmA"}, // Insert space after trig funcs\n    {trigger: "\\\\\\\\(neq|geq|leq|gg|ll|sim)([0-9]+)", replacement: "\\\\[[0]] [[1]]", options: "rmA"}, // Insert space after inequality symbols\n\n\n    // Visual operations\n    {trigger: "U", replacement: "\\\\underbrace{ ${VISUAL} }_{ $0 }", options: "mA"},\n    {trigger: "B", replacement: "\\\\underset{ $0 }{ ${VISUAL} }", options: "mA"},\n    {trigger: "C", replacement: "\\\\cancel{ ${VISUAL} }", options: "mA"},\n    {trigger: "K", replacement: "\\\\cancelto{ $0 }{ ${VISUAL} }", options: "mA"},\n    {trigger: "S", replacement: "\\\\sqrt{ ${VISUAL} }", options: "mA"},\n\n\n\n    // Symbols\n    {trigger: "ooo", replacement: "\\\\infty", options: "mA"},\n    {trigger: "sum", replacement: "\\\\sum", options: "mA"},\n    {trigger: "prod", replacement: "\\\\prod", options: "mA"},\n    {trigger: "lim", replacement: "\\\\lim_{ ${0:n} \\\\to ${1:\\\\infty} } $2", options: "mA"},\n    {trigger: "([^\\\\\\\\])pm", replacement: "[[0]]\\\\pm", options: "rm"},\n    {trigger: "([^\\\\\\\\])mp", replacement: "[[0]]\\\\mp", options: "rm"},\n    {trigger: "+-", replacement: "\\\\pm", options: "mA"},\n    {trigger: "-+", replacement: "\\\\mp", options: "mA"},\n    {trigger: "...", replacement: "\\\\dots", options: "mA"},\n    {trigger: "<->", replacement: "\\\\leftrightarrow ", options: "mA"},\n    {trigger: "->", replacement: "\\\\to", options: "mA"},\n    {trigger: "!>", replacement: "\\\\mapsto", options: "mA"},\n    {trigger: "invs", replacement: "^{-1}", options: "mA"},\n    {trigger: "\\\\\\\\\\\\", replacement: "\\\\setminus", options: "mA"},\n    {trigger: "||", replacement: "\\\\mid", options: "mA"},\n    {trigger: "and", replacement: "\\\\cap", options: "mA"},\n    {trigger: "orr", replacement: "\\\\cup", options: "mA"},\n    {trigger: "inn", replacement: "\\\\in", options: "mA"},\n    {trigger: "\\\\subset eq", replacement: "\\\\subseteq", options: "mA"},\n    {trigger: "set", replacement: "\\\\{ $0 \\\\}$1", options: "mA"},\n    {trigger: "=>", replacement: "\\\\implies", options: "mA"},\n    {trigger: "=<", replacement: "\\\\impliedby", options: "mA"},\n    {trigger: "iff", replacement: "\\\\iff", options: "mA"},\n    {trigger: "e\\\\xi sts", replacement: "\\\\exists", options: "mA", priority: 1},\n    {trigger: "===", replacement: "\\\\equiv", options: "mA"},\n    {trigger: "Sq", replacement: "\\\\square", options: "mA"},\n    {trigger: "!=", replacement: "\\\\neq", options: "mA"},\n    {trigger: ">=", replacement: "\\\\geq", options: "mA"},\n    {trigger: "<=", replacement: "\\\\leq", options: "mA"},\n    {trigger: ">>", replacement: "\\\\gg", options: "mA"},\n    {trigger: "<<", replacement: "\\\\ll", options: "mA"},\n    {trigger: "~~", replacement: "\\\\sim", options: "mA"},\n    {trigger: "\\\\sim ~", replacement: "\\\\approx", options: "mA"},\n    {trigger: "prop", replacement: "\\\\propto", options: "mA"},\n    {trigger: "nabl", replacement: "\\\\nabla", options: "mA"},\n    {trigger: "del", replacement: "\\\\nabla", options: "mA"},\n    {trigger: "xx", replacement: "\\\\times", options: "mA"},\n    {trigger: "**", replacement: "\\\\cdot", options: "mA"},\n    {trigger: "para", replacement: "\\\\parallel", options: "mA"},\n\n\n    {trigger: "xnn", replacement: "x_{n}", options: "mA"},\n    {trigger: "xii", replacement: "x_{i}", options: "mA"},\n    {trigger: "xjj", replacement: "x_{j}", options: "mA"},\n    {trigger: "xp1", replacement: "x_{n+1}", options: "mA"},\n    {trigger: "ynn", replacement: "y_{n}", options: "mA"},\n    {trigger: "yii", replacement: "y_{i}", options: "mA"},\n    {trigger: "yjj", replacement: "y_{j}", options: "mA"},\n\n\n    {trigger: "mcal", replacement: "\\\\mathcal{$0}$1", options: "mA"},\n    {trigger: "mbb", replacement: "\\\\mathbb{$0}$1", options: "mA"},\n    {trigger: "ell", replacement: "\\\\ell", options: "mA"},\n    {trigger: "lll", replacement: "\\\\ell", options: "mA"},\n    {trigger: "LL", replacement: "\\\\mathcal{L}", options: "mA"},\n    {trigger: "HH", replacement: "\\\\mathcal{H}", options: "mA"},\n    {trigger: "CC", replacement: "\\\\mathbb{C}", options: "mA"},\n    {trigger: "RR", replacement: "\\\\mathbb{R}", options: "mA"},\n    {trigger: "ZZ", replacement: "\\\\mathbb{Z}", options: "mA"},\n    {trigger: "NN", replacement: "\\\\mathbb{N}", options: "mA"},\n    {trigger: "II", replacement: "\\\\mathbb{1}", options: "mA"},\n    {trigger: "\\\\mathbb{1}I", replacement: "\\\\hat{\\\\mathbb{1}}", options: "mA"},\n    {trigger: "AA", replacement: "\\\\mathcal{A}", options: "mA"},\n    {trigger: "BB", replacement: "\\\\mathbf{B}", options: "mA"},\n    {trigger: "EE", replacement: "\\\\mathbf{E}", options: "mA"},\n\n\n\n    // Unit vectors\n    {trigger: ":i", replacement: "\\\\mathbf{i}", options: "mA"},\n    {trigger: ":j", replacement: "\\\\mathbf{j}", options: "mA"},\n    {trigger: ":k", replacement: "\\\\mathbf{k}", options: "mA"},\n    {trigger: ":x", replacement: "\\\\hat{\\\\mathbf{x}}", options: "mA"},\n    {trigger: ":y", replacement: "\\\\hat{\\\\mathbf{y}}", options: "mA"},\n    {trigger: ":z", replacement: "\\\\hat{\\\\mathbf{z}}", options: "mA"},\n\n\n\n    // Derivatives\n    {trigger: "par", replacement: "\\\\frac{ \\\\partial ${0:y} }{ \\\\partial ${1:x} } $2", options: "m"},\n    {trigger: "pa2", replacement: "\\\\frac{ \\\\partial^{2} ${0:y} }{ \\\\partial ${1:x}^{2} } $2", options: "mA"},\n    {trigger: "pa3", replacement: "\\\\frac{ \\\\partial^{3} ${0:y} }{ \\\\partial ${1:x}^{3} } $2", options: "mA"},\n    {trigger: "pa([A-Za-z])([A-Za-z])", replacement: "\\\\frac{ \\\\partial [[0]] }{ \\\\partial [[1]] } ", options: "rm"},\n    {trigger: "pa([A-Za-z])([A-Za-z])([A-Za-z])", replacement: "\\\\frac{ \\\\partial^{2} [[0]] }{ \\\\partial [[1]] \\\\partial [[2]] } ", options: "rm"},\n    {trigger: "pa([A-Za-z])([A-Za-z])2", replacement: "\\\\frac{ \\\\partial^{2} [[0]] }{ \\\\partial [[1]]^{2} } ", options: "rmA"},\n    {trigger: "de([A-Za-z])([A-Za-z])", replacement: "\\\\frac{ d[[0]] }{ d[[1]] } ", options: "rm"},\n    {trigger: "de([A-Za-z])([A-Za-z])2", replacement: "\\\\frac{ d^{2}[[0]] }{ d[[1]]^{2} } ", options: "rmA"},\n    {trigger: "ddt", replacement: "\\\\frac{d}{dt} ", options: "mA"},\n\n\n\n    // Integrals\n    {trigger: "oinf", replacement: "\\\\int_{0}^{\\\\infty} $0 \\\\, d${1:x} $2", options: "mA"},\n    {trigger: "infi", replacement: "\\\\int_{-\\\\infty}^{\\\\infty} $0 \\\\, d${1:x} $2", options: "mA"},\n    {trigger: "dint", replacement: "\\\\int_{${0:0}}^{${1:\\\\infty}} $2 \\\\, d${3:x} $4", options: "mA"},\n    {trigger: "oint", replacement: "\\\\oint", options: "mA"},\n    {trigger: "iiint", replacement: "\\\\iiint", options: "mA"},\n    {trigger: "iint", replacement: "\\\\iint", options: "mA"},\n    {trigger: "int", replacement: "\\\\int $0 \\\\, d${1:x} $2", options: "mA"},\n\n\n\n    // Physics\n    {trigger: "kbt", replacement: "k_{B}T", options: "mA"},\n\n\n    // Quantum mechanics\n    {trigger: "hba", replacement: "\\\\hbar", options: "mA"},\n    {trigger: "dag", replacement: "^{\\\\dagger}", options: "mA"},\n    {trigger: "o+", replacement: "\\\\oplus ", options: "mA"},\n    {trigger: "ox", replacement: "\\\\otimes ", options: "mA"},\n    {trigger: "ot\\\\mathrm{Im}es", replacement: "\\\\otimes ", options: "mA"}, // Handle conflict with "im" snippet\n    {trigger: "bra", replacement: "\\\\bra{$0} $1", options: "mA"},\n    {trigger: "ket", replacement: "\\\\ket{$0} $1", options: "mA"},\n    {trigger: "brk", replacement: "\\\\braket{ $0 | $1 } $2", options: "mA"},\n    {trigger: "\\\\\\\\bra{([^|]+)\\\\|", replacement: "\\\\braket{ [[0]] | $0 ", options: "rmA", description: "Convert bra into braket"},\n    {trigger: "\\\\\\\\bra{(.+)}([^ ]+)>", replacement: "\\\\braket{ [[0]] | $0 ", options: "rmA", description: "Convert bra into braket (alternate)"},\n    {trigger: "outp", replacement: "\\\\ket{${0:\\\\psi}} \\\\bra{${0:\\\\psi}} $1", options: "mA"},\n\n\n\n    // Chemistry\n    {trigger: "pu", replacement: "\\\\pu{ $0 }", options: "mA"},\n    {trigger: "msun", replacement: "M_{\\\\odot}", options: "mA"},\n    {trigger: "solm", replacement: "M_{\\\\odot}", options: "mA"},\n    {trigger: "ce", replacement: "\\\\ce{ $0 }", options: "mA"},\n    {trigger: "iso", replacement: "{}^{${0:4}}_{${1:2}}${2:He}", options: "mA"},\n    {trigger: "hel4", replacement: "{}^{4}_{2}He ", options: "mA"},\n    {trigger: "hel3", replacement: "{}^{3}_{2}He ", options: "mA"},\n\n\n\n    // Environments\n    {trigger: "pmat", replacement: "\\\\begin{pmatrix}\\n$0\\n\\\\end{pmatrix}", options: "mA"},\n    {trigger: "bmat", replacement: "\\\\begin{bmatrix}\\n$0\\n\\\\end{bmatrix}", options: "mA"},\n    {trigger: "Bmat", replacement: "\\\\begin{Bmatrix}\\n$0\\n\\\\end{Bmatrix}", options: "mA"},\n    {trigger: "vmat", replacement: "\\\\begin{vmatrix}\\n$0\\n\\\\end{vmatrix}", options: "mA"},\n    {trigger: "Vmat", replacement: "\\\\begin{Vmatrix}\\n$0\\n\\\\end{Vmatrix}", options: "mA"},\n    {trigger: "case", replacement: "\\\\begin{cases}\\n$0\\n\\\\end{cases}", options: "mA"},\n    {trigger: "align", replacement: "\\\\begin{align}\\n$0\\n\\\\end{align}", options: "mA"},\n    {trigger: "array", replacement: "\\\\begin{array}\\n$0\\n\\\\end{array}", options: "mA"},\n    {trigger: "matrix", replacement: "\\\\begin{matrix}\\n$0\\n\\\\end{matrix}", options: "mA"},\n\n\n\n    // Brackets\n    {trigger: "avg", replacement: "\\\\langle $0 \\\\rangle $1", options: "mA"},\n    {trigger: "norm", replacement: "\\\\lvert $0 \\\\rvert $1", options: "mA", priority: 1},\n    {trigger: "mod", replacement: "|$0|$1", options: "mA"},\n    {trigger: "(", replacement: "(${VISUAL})", options: "mA"},\n    {trigger: "[", replacement: "[${VISUAL}]", options: "mA"},\n    {trigger: "{", replacement: "{${VISUAL}}", options: "mA"},\n    {trigger: "(", replacement: "($0)$1", options: "mA"},\n    {trigger: "{", replacement: "{$0}$1", options: "mA"},\n    {trigger: "[", replacement: "[$0]$1", options: "mA"},\n    {trigger: "lr(", replacement: "\\\\left( $0 \\\\right) $1", options: "mA"},\n    {trigger: "lr|", replacement: "\\\\left| $0 \\\\right| $1", options: "mA"},\n    {trigger: "lr{", replacement: "\\\\left\\\\{ $0 \\\\right\\\\} $1", options: "mA"},\n    {trigger: "lr[", replacement: "\\\\left[ $0 \\\\right] $1", options: "mA"},\n    {trigger: "lra", replacement: "\\\\left< $0 \\\\right> $1", options: "mA"},\n\n\n\n    // Misc\n    {trigger: "tayl", replacement: "${0:f}(${1:x} + ${2:h}) = ${0:f}(${1:x}) + ${0:f}\'(${1:x})${2:h} + ${0:f}\'\'(${1:x}) \\\\frac{${2:h}^{2}}{2!} + \\\\dots$3", options: "mA"},\n]';
 
 // src/editor_extensions/conceal.ts
-var import_view5 = __toModule(require("@codemirror/view"));
+var import_obsidian2 = __toModule(require("obsidian"));
+var import_view4 = __toModule(require("@codemirror/view"));
 var import_language5 = __toModule(require("@codemirror/language"));
 
 // src/editor_helpers.ts
 var import_obsidian = __toModule(require("obsidian"));
-var import_view4 = __toModule(require("@codemirror/view"));
 var import_state3 = __toModule(require("@codemirror/state"));
 var import_language4 = __toModule(require("@codemirror/language"));
 function replaceRange(view, start2, end2, replacement) {
@@ -4554,13 +4554,14 @@ function resetCursorBlink() {
   if (import_obsidian.Platform.isMobile)
     return;
   const cursorLayer = document.getElementsByClassName("cm-cursorLayer")[0];
-  const curAnim = cursorLayer.style.animationName;
-  cursorLayer.style.animationName = curAnim === "cm-blink" ? "cm-blink2" : "cm-blink";
+  if (cursorLayer) {
+    const curAnim = cursorLayer.style.animationName;
+    cursorLayer.style.animationName = curAnim === "cm-blink" ? "cm-blink2" : "cm-blink";
+  }
 }
-function isWithinEquation(view) {
-  const s = view instanceof import_view4.EditorView ? view.state : view;
-  const pos = s.selection.main.to - 1;
-  const tree = (0, import_language4.syntaxTree)(s);
+function isWithinEquation(state) {
+  const pos = state.selection.main.to - 1;
+  const tree = (0, import_language4.syntaxTree)(state);
   const token = tree.resolveInner(pos, 1).name;
   let withinEquation = token.contains("math");
   if (!withinEquation) {
@@ -4569,24 +4570,13 @@ function isWithinEquation(view) {
     if (tokenLeft.contains("math") && tokenRight.contains("math")) {
       withinEquation = true;
     }
-  } else {
-    if (token.contains("end")) {
-      withinEquation = false;
-    }
+  } else if (token.contains("end")) {
+    withinEquation = false;
   }
   return withinEquation;
 }
-function isWithinInlineEquation(view) {
-  const result = getEquationBounds(view);
-  if (!result)
-    return false;
-  const end2 = result.end;
-  const d = view.state.doc;
-  const inlineMath = d.sliceString(end2, end2 + 2) != "$$";
-  return inlineMath;
-}
-function isWithinInlineEquationState(state) {
-  const result = getEquationBounds(state);
+function isWithinInlineEquation(state, pos = state.selection.main.from) {
+  const result = getEquationBounds(state, pos);
   if (!result)
     return false;
   const end2 = result.end;
@@ -4594,27 +4584,9 @@ function isWithinInlineEquationState(state) {
   const inlineMath = d.sliceString(end2, end2 + 2) != "$$";
   return inlineMath;
 }
-function isTouchingInlineEquation(state, pos) {
-  const tree = (0, import_language4.syntaxTree)(state);
-  const prevToken = tree.resolveInner(pos - 1, 1).name;
-  const token = tree.resolveInner(pos, 1).name;
-  const nextToken = tree.resolveInner(pos + 1, 1).name;
-  if (token.contains("math-end") && !prevToken.contains("math-end") && !nextToken.contains("math-end")) {
-    return -1;
-  } else if (!token.contains("math-begin") && nextToken.contains("math-begin")) {
-    const nextNextToken = tree.resolveInner(pos + 2, 1).name;
-    if (!nextNextToken.contains("math-begin")) {
-      return 1;
-    }
-  }
-  return 0;
-}
-function getEquationBounds(view, pos) {
-  const s = view instanceof import_view4.EditorView ? view.state : view;
-  const text = s.doc.toString();
-  if (typeof pos === "undefined") {
-    pos = s.selection.main.from;
-  }
+function getEquationBounds(state, pos = state.selection.main.from) {
+  let text = state.doc.toString();
+  text = text.replaceAll("\\$", "\\R");
   const left2 = text.lastIndexOf("$", pos - 1);
   const right2 = text.indexOf("$", pos);
   if (left2 === -1 || right2 === -1)
@@ -4622,7 +4594,7 @@ function getEquationBounds(view, pos) {
   return { start: left2 + 1, end: right2 };
 }
 function isInsideEnvironment(view, pos, env) {
-  const result = getEquationBounds(view);
+  const result = getEquationBounds(view.state);
   if (!result)
     return false;
   const { start: start2, end: end2 } = result;
@@ -4655,7 +4627,7 @@ function isInsideEnvironment(view, pos, env) {
   return false;
 }
 function getEnclosingBracketsPos(view, pos) {
-  const result = getEquationBounds(view);
+  const result = getEquationBounds(view.state);
   if (!result)
     return -1;
   const { start: start2, end: end2 } = result;
@@ -5189,7 +5161,7 @@ var mathscrcal = {
 };
 
 // src/editor_extensions/conceal.ts
-var ConcealWidget = class extends import_view5.WidgetType {
+var ConcealWidget = class extends import_view4.WidgetType {
   constructor(symbol, className, elementType) {
     super();
     this.symbol = symbol;
@@ -5209,7 +5181,7 @@ var ConcealWidget = class extends import_view5.WidgetType {
     return false;
   }
 };
-var TextWidget = class extends import_view5.WidgetType {
+var TextWidget = class extends import_view4.WidgetType {
   constructor(symbol) {
     super();
     this.symbol = symbol;
@@ -5242,7 +5214,7 @@ function escapeRegex(regex) {
   }
   return regex;
 }
-function concealSymbols(eqn, prefix, suffix, symbolMap, className) {
+function concealSymbols(eqn, prefix, suffix, symbolMap, className, allowSucceedingLetters = true) {
   const symbolNames = Object.keys(symbolMap);
   const regexStr = prefix + "(" + escapeRegex(symbolNames.join("|")) + ")" + suffix;
   const symbolRegex = new RegExp(regexStr, "g");
@@ -5250,6 +5222,12 @@ function concealSymbols(eqn, prefix, suffix, symbolMap, className) {
   const concealments = [];
   for (const match of matches) {
     const symbol = match[1];
+    if (!allowSucceedingLetters) {
+      const end2 = match.index + match[0].length;
+      if (eqn.charAt(end2).match(/[a-zA-Z]/)) {
+        continue;
+      }
+    }
     concealments.push({ start: match.index, end: match.index + match[0].length, replacement: symbolMap[symbol], class: className });
   }
   return concealments;
@@ -5370,7 +5348,7 @@ function concealAtoZ(eqn, prefix, suffix, symbolMap, className) {
   }
   return concealments;
 }
-function concealBraKet(eqn, selection, eqnStartBound) {
+function concealBraKet(eqn, selection, eqnStartBound, mousedown) {
   const langle = "\u3008";
   const rangle = "\u3009";
   const vert = "|";
@@ -5385,10 +5363,12 @@ function concealBraKet(eqn, selection, eqnStartBound) {
       continue;
     const start2 = match.index;
     const end2 = start2 + match[0].length;
-    if (selectionAndRangeOverlap(selection, eqnStartBound + start2, eqnStartBound + end2))
-      continue;
-    if (selectionAndRangeOverlap(selection, eqnStartBound + j, eqnStartBound + j + 1))
-      continue;
+    if (!mousedown) {
+      if (selectionAndRangeOverlap(selection, eqnStartBound + start2, eqnStartBound + end2))
+        continue;
+      if (selectionAndRangeOverlap(selection, eqnStartBound + j, eqnStartBound + j + 1))
+        continue;
+    }
     const type = match[1];
     const left2 = type === "ket" ? vert : langle;
     const right2 = type === "bra" ? vert : rangle;
@@ -5398,7 +5378,7 @@ function concealBraKet(eqn, selection, eqnStartBound) {
   }
   return concealments;
 }
-function concealFraction(eqn, selection, eqnStartBound) {
+function concealFraction(eqn, selection, eqnStartBound, mousedown) {
   const regexStr = "\\\\(frac){";
   const symbolRegex = new RegExp(regexStr, "g");
   const matches = [...eqn.matchAll(symbolRegex)];
@@ -5416,12 +5396,14 @@ function concealFraction(eqn, selection, eqnStartBound) {
       continue;
     const start2 = match.index;
     const end2 = start2 + match[0].length;
-    if (selectionAndRangeOverlap(selection, eqnStartBound + start2, eqnStartBound + end2))
-      continue;
-    if (selectionAndRangeOverlap(selection, eqnStartBound + j, eqnStartBound + j + 2))
-      continue;
-    if (selectionAndRangeOverlap(selection, eqnStartBound + k, eqnStartBound + k + 1))
-      continue;
+    if (!mousedown) {
+      if (selectionAndRangeOverlap(selection, eqnStartBound + start2, eqnStartBound + end2))
+        continue;
+      if (selectionAndRangeOverlap(selection, eqnStartBound + j, eqnStartBound + j + 2))
+        continue;
+      if (selectionAndRangeOverlap(selection, eqnStartBound + k, eqnStartBound + k + 1))
+        continue;
+    }
     concealments.push({ start: start2, end: end2 - 1, replacement: "" });
     concealments.push({ start: end2 - 1, end: end2, replacement: "(", class: "cm-bracket" });
     concealments.push({ start: j, end: j + 1, replacement: ")", class: "cm-bracket" });
@@ -5432,8 +5414,10 @@ function concealFraction(eqn, selection, eqnStartBound) {
   return concealments;
 }
 function conceal(view) {
+  var _a;
   const widgets = [];
   const selection = view.state.selection;
+  const mousedown = (_a = view.plugin(import_obsidian2.livePreviewState)) == null ? void 0 : _a.mousedown;
   for (const { from, to } of view.visibleRanges) {
     (0, import_language5.syntaxTree)(view.state).iterate({
       from,
@@ -5444,7 +5428,7 @@ function conceal(view) {
         if (!(type.name.contains("begin") && type.name.contains("math"))) {
           return;
         }
-        const bounds = getEquationBounds(view, to2 + 1);
+        const bounds = getEquationBounds(view.state, to2 + 1);
         if (!bounds)
           return;
         const eqn = view.state.doc.sliceString(bounds.start, bounds.end);
@@ -5453,7 +5437,7 @@ function conceal(view) {
           ...concealSymbols(eqn, "\\^", "", map_super),
           ...concealSymbols(eqn, "_", "", map_sub),
           ...concealSymbols(eqn, "\\\\frac", "", fractions),
-          ...concealSymbols(eqn, "\\\\", "", ALL_SYMBOLS),
+          ...concealSymbols(eqn, "\\\\", "", ALL_SYMBOLS, void 0, false),
           ...concealSupSub(eqn, true, ALL_SYMBOLS),
           ...concealSupSub(eqn, false, ALL_SYMBOLS),
           ...concealModifier(eqn, "hat", "\u0302"),
@@ -5462,28 +5446,29 @@ function conceal(view) {
           ...concealModifier(eqn, "overline", "\u0304"),
           ...concealModifier(eqn, "bar", "\u0304"),
           ...concealModifier(eqn, "tilde", "\u0303"),
+          ...concealModifier(eqn, "vec", "\u20D7"),
           ...concealSymbols(eqn, "\\\\", "", brackets, "cm-bracket"),
           ...concealAtoZ(eqn, "\\\\mathcal{", "}", mathscrcal),
           ...concealModifiedGreekLetters(eqn, greek),
           ...concealModified_A_to_Z_0_to_9(eqn, mathbb),
           ...concealText(eqn),
-          ...concealBraKet(eqn, selection, bounds.start),
-          ...concealFraction(eqn, selection, bounds.start),
+          ...concealBraKet(eqn, selection, bounds.start, mousedown),
+          ...concealFraction(eqn, selection, bounds.start, mousedown),
           ...concealOperators(eqn, operators)
         ];
         for (const concealment of concealments) {
           const start2 = bounds.start + concealment.start;
           const end2 = bounds.start + concealment.end;
           const symbol = concealment.replacement;
-          if (selectionAndRangeOverlap(selection, start2, end2))
+          if (!mousedown && selectionAndRangeOverlap(selection, start2, end2))
             continue;
           if (start2 === end2) {
-            widgets.push(import_view5.Decoration.widget({
+            widgets.push(import_view4.Decoration.widget({
               widget: new TextWidget(symbol),
               block: false
             }).range(start2, end2));
           } else {
-            widgets.push(import_view5.Decoration.replace({
+            widgets.push(import_view4.Decoration.replace({
               widget: new ConcealWidget(symbol, concealment.class, concealment.elementType),
               inclusive: false,
               block: false
@@ -5493,9 +5478,9 @@ function conceal(view) {
       }
     });
   }
-  return import_view5.Decoration.set(widgets, true);
+  return import_view4.Decoration.set(widgets, true);
 }
-var concealPlugin = import_view5.ViewPlugin.fromClass(class {
+var concealPlugin = import_view4.ViewPlugin.fromClass(class {
   constructor(view) {
     this.decorations = conceal(view);
   }
@@ -5506,12 +5491,12 @@ var concealPlugin = import_view5.ViewPlugin.fromClass(class {
 }, { decorations: (v) => v.decorations });
 
 // src/editor_extensions/highlight_brackets.ts
-var import_view6 = __toModule(require("@codemirror/view"));
+var import_view5 = __toModule(require("@codemirror/view"));
 var import_state4 = __toModule(require("@codemirror/state"));
 var import_language6 = __toModule(require("@codemirror/language"));
 var Ncolors = 3;
 function getHighlightBracketMark(pos, className) {
-  return import_view6.Decoration.mark({
+  return import_view5.Decoration.mark({
     inclusive: true,
     attributes: {},
     class: className
@@ -5529,7 +5514,7 @@ function colorPairedBrackets(view) {
         if (!(type.name.contains("begin") && type.name.contains("math"))) {
           return;
         }
-        const bounds = getEquationBounds(view, to2 + 1);
+        const bounds = getEquationBounds(view.state, to2 + 1);
         if (!bounds)
           return;
         const eqn = view.state.doc.sliceString(bounds.start, bounds.end);
@@ -5559,19 +5544,19 @@ function colorPairedBrackets(view) {
       }
     });
   }
-  return import_view6.Decoration.set(widgets, true);
+  return import_view5.Decoration.set(widgets, true);
 }
 function highlightCursorBrackets(view) {
   const widgets = [];
   const selection = view.state.selection;
   const ranges = selection.ranges;
   const text = view.state.doc.toString();
-  if (!isWithinEquation(view)) {
-    return import_view6.Decoration.set(widgets, true);
+  if (!isWithinEquation(view.state)) {
+    return import_view5.Decoration.set(widgets, true);
   }
-  const bounds = getEquationBounds(view, selection.main.to);
+  const bounds = getEquationBounds(view.state, selection.main.to);
   if (!bounds)
-    return import_view6.Decoration.set(widgets, true);
+    return import_view5.Decoration.set(widgets, true);
   const eqn = view.state.doc.sliceString(bounds.start, bounds.end);
   const openBrackets = ["{", "[", "("];
   const brackets2 = ["{", "[", "(", "}", "]", ")"];
@@ -5615,9 +5600,9 @@ function highlightCursorBrackets(view) {
     if (done)
       break;
   }
-  return import_view6.Decoration.set(widgets, true);
+  return import_view5.Decoration.set(widgets, true);
 }
-var colorPairedBracketsPlugin = import_view6.ViewPlugin.fromClass(class {
+var colorPairedBracketsPlugin = import_view5.ViewPlugin.fromClass(class {
   constructor(view) {
     this.decorations = colorPairedBrackets(view);
   }
@@ -5628,7 +5613,7 @@ var colorPairedBracketsPlugin = import_view6.ViewPlugin.fromClass(class {
   }
 }, { decorations: (v) => v.decorations });
 var colorPairedBracketsPluginLowestPrec = import_state4.Prec.lowest(colorPairedBracketsPlugin.extension);
-var highlightCursorBracketsPlugin = import_view6.ViewPlugin.fromClass(class {
+var highlightCursorBracketsPlugin = import_view5.ViewPlugin.fromClass(class {
   constructor(view) {
     this.decorations = highlightCursorBrackets(view);
   }
@@ -5638,10 +5623,10 @@ var highlightCursorBracketsPlugin = import_view6.ViewPlugin.fromClass(class {
   }
 }, { decorations: (v) => v.decorations });
 
-// src/editor_extensions/inline_math_tooltip.ts
-var import_view7 = __toModule(require("@codemirror/view"));
+// src/editor_extensions/math_tooltip.ts
+var import_view6 = __toModule(require("@codemirror/view"));
 var import_state5 = __toModule(require("@codemirror/state"));
-var import_obsidian2 = __toModule(require("obsidian"));
+var import_obsidian3 = __toModule(require("obsidian"));
 var cursorTooltipField = import_state5.StateField.define({
   create: getCursorTooltips,
   update(tooltips2, tr) {
@@ -5649,27 +5634,21 @@ var cursorTooltipField = import_state5.StateField.define({
       return tooltips2;
     return getCursorTooltips(tr.state);
   },
-  provide: (f) => import_view7.showTooltip.computeN([f], (state) => state.field(f))
+  provide: (f) => import_view6.showTooltip.computeN([f], (state) => state.field(f))
 });
 function getCursorTooltips(state) {
-  const isInsideInlineEqn = isWithinEquation(state) && isWithinInlineEquationState(state);
-  let shouldShowTooltip = isInsideInlineEqn;
-  let isTouchingInlineEqn;
-  let pos = state.selection.main.from;
-  if (!isInsideInlineEqn) {
-    isTouchingInlineEqn = isTouchingInlineEquation(state, pos - 1);
-    if (isTouchingInlineEqn != 0) {
-      pos += isTouchingInlineEqn;
-      shouldShowTooltip = true;
-    }
-  }
-  if (shouldShowTooltip) {
+  const pos = state.selection.main.from;
+  if (isWithinEquation(state)) {
+    const isInline = isWithinInlineEquation(state, pos);
+    const isLivePreview = state.field(import_obsidian3.editorLivePreviewField);
+    if (!isInline && isLivePreview)
+      return [];
     const bounds = getEquationBounds(state, pos);
     if (!bounds)
       return [];
-    if (bounds.start === bounds.end)
-      return [];
     const eqn = state.sliceDoc(bounds.start, bounds.end);
+    if (eqn.trim() === "")
+      return [];
     return [
       {
         pos: bounds.start,
@@ -5677,9 +5656,10 @@ function getCursorTooltips(state) {
         strictSide: true,
         arrow: true,
         create: () => {
+          const delimiter = isInline ? "$" : "$$";
           const dom = document.createElement("div");
           dom.className = "cm-tooltip-cursor";
-          import_obsidian2.MarkdownRenderer.renderMarkdown("$" + eqn + "$", dom, "", null);
+          import_obsidian3.MarkdownRenderer.renderMarkdown(delimiter + eqn + delimiter, dom, "", null);
           return { dom };
         }
       }
@@ -5688,12 +5668,12 @@ function getCursorTooltips(state) {
     return [];
   }
 }
-var cursorTooltipBaseTheme = import_view7.EditorView.baseTheme({
+var cursorTooltipBaseTheme = import_view6.EditorView.baseTheme({
   ".cm-tooltip.cm-tooltip-cursor": {
     backgroundColor: "var(--background-primary)",
     color: "var(--text-normal)",
     border: "1px solid var(--background-modifier-border)",
-    padding: "2px 7px",
+    padding: "4px 6px",
     borderRadius: "6px",
     "& .cm-tooltip-arrow:before": {
       borderTopColor: "var(--background-modifier-border)"
@@ -5702,14 +5682,16 @@ var cursorTooltipBaseTheme = import_view7.EditorView.baseTheme({
       borderTopColor: "var(--background-primary)"
     },
     "& p": {
-      marginTop: "2px",
-      marginBottom: "2px"
+      margin: "0px"
+    },
+    "& mjx-container": {
+      padding: "2px !important"
     }
   }
 });
 
 // src/ui/file_suggest.ts
-var import_obsidian4 = __toModule(require("obsidian"));
+var import_obsidian5 = __toModule(require("obsidian"));
 
 // node_modules/@popperjs/core/lib/enums.js
 var top = "top";
@@ -7264,7 +7246,7 @@ var createPopper = /* @__PURE__ */ popperGenerator({
 });
 
 // src/ui/suggest.ts
-var import_obsidian3 = __toModule(require("obsidian"));
+var import_obsidian4 = __toModule(require("obsidian"));
 var wrapAround = (value, size) => {
   return (value % size + size) % size;
 };
@@ -7337,7 +7319,7 @@ var TextInputSuggest = class {
   constructor(app, inputEl) {
     this.app = app;
     this.inputEl = inputEl;
-    this.scope = new import_obsidian3.Scope();
+    this.scope = new import_obsidian4.Scope();
     this.suggestEl = createDiv("suggestion-container");
     const suggestion = this.suggestEl.createDiv("suggestion");
     this.suggest = new Suggest(this, suggestion, this.scope);
@@ -7393,7 +7375,7 @@ var FileSuggest = class extends TextInputSuggest {
   getSuggestions(inputStr) {
     const files = [];
     const lowerCaseInputStr = inputStr.toLowerCase();
-    import_obsidian4.Vault.recurseChildren(this.app.vault.getRoot(), (file) => {
+    import_obsidian5.Vault.recurseChildren(this.app.vault.getRoot(), (file) => {
       if (file.path.toLowerCase().contains(lowerCaseInputStr)) {
         files.push(file);
       }
@@ -7410,13 +7392,15 @@ var FileSuggest = class extends TextInputSuggest {
   }
 };
 
+// src/snippets/file_watch.ts
+var import_obsidian6 = __toModule(require("obsidian"));
+
 // src/snippets/snippet_helper_functions.ts
-var import_obsidian5 = __toModule(require("obsidian"));
 var import_commands2 = __toModule(require("@codemirror/commands"));
 
 // src/snippets/marker_state_field.ts
 var import_state6 = __toModule(require("@codemirror/state"));
-var import_view8 = __toModule(require("@codemirror/view"));
+var import_view7 = __toModule(require("@codemirror/view"));
 var addMark = import_state6.StateEffect.define();
 var removeMark = import_state6.StateEffect.define();
 var clearMarks = import_state6.StateEffect.define();
@@ -7427,7 +7411,7 @@ var undidStartSnippet = import_state6.StateEffect.define();
 var undidEndSnippet = import_state6.StateEffect.define();
 var markerStateField = import_state6.StateField.define({
   create() {
-    return import_view8.Decoration.none;
+    return import_view7.Decoration.none;
   },
   update(value, tr) {
     value = value.map(tr.changes);
@@ -7446,8 +7430,58 @@ var markerStateField = import_state6.StateField.define({
     }
     return value;
   },
-  provide: (f) => import_view8.EditorView.decorations.from(f)
+  provide: (f) => import_view7.EditorView.decorations.from(f)
 });
+
+// src/snippets/tabstops_state_field.ts
+var import_state7 = __toModule(require("@codemirror/state"));
+var addTabstopEffect = import_state7.StateEffect.define();
+var addTabstopsEffect = import_state7.StateEffect.define();
+var consumeTabstopEffect = import_state7.StateEffect.define();
+var removeEmptyTabstopsEffect = import_state7.StateEffect.define();
+var clearAllTabstopsEffect = import_state7.StateEffect.define();
+var tabstopsStateField = import_state7.StateField.define({
+  create(editorState) {
+    return [];
+  },
+  update(oldState, transaction) {
+    let tabstopReferences = oldState;
+    for (const effect4 of transaction.effects) {
+      if (effect4.is(addTabstopEffect)) {
+        tabstopReferences.unshift(effect4.value);
+      } else if (effect4.is(addTabstopsEffect)) {
+        tabstopReferences.unshift(...effect4.value);
+      } else if (effect4.is(consumeTabstopEffect)) {
+        tabstopReferences.shift();
+      } else if (effect4.is(removeEmptyTabstopsEffect)) {
+        tabstopReferences = tabstopReferences.filter((tabstopReference) => tabstopReference.markers.length > 0);
+      } else if (effect4.is(clearAllTabstopsEffect)) {
+        tabstopReferences = [];
+      }
+    }
+    return tabstopReferences;
+  }
+});
+function addTabstop(view, tabstopReference) {
+  view.dispatch({
+    effects: [addTabstopEffect.of(tabstopReference)]
+  });
+}
+function consumeTabstop(view) {
+  view.dispatch({
+    effects: [consumeTabstopEffect.of(null)]
+  });
+}
+function removeEmptyTabstops(view) {
+  view.dispatch({
+    effects: [removeEmptyTabstopsEffect.of(null)]
+  });
+}
+function clearAllTabstops(view) {
+  view.dispatch({
+    effects: [clearAllTabstopsEffect.of(null)]
+  });
+}
 
 // src/snippets/snippet_helper_functions.ts
 var import_json5 = __toModule(require_dist());
@@ -7493,17 +7527,6 @@ function validateSnippets(snippets2) {
   }
   return valid;
 }
-function isInFolder(file, dir) {
-  let cur = file.parent;
-  let cnt = 0;
-  while (cur && !cur.isRoot() && cnt < 100) {
-    if (cur.path === dir.path)
-      return true;
-    cur = cur.parent;
-    cnt++;
-  }
-  return false;
-}
 var snippetInvertedEffects = import_commands2.invertedEffects.of((tr) => {
   const effects = [];
   for (const effect4 of tr.effects) {
@@ -7523,17 +7546,74 @@ var snippetInvertedEffects = import_commands2.invertedEffects.of((tr) => {
   }
   return effects;
 });
+var handleUndoRedo = (update) => {
+  const undoTr = update.transactions.find((tr) => tr.isUserEvent("undo"));
+  const redoTr = update.transactions.find((tr) => tr.isUserEvent("redo"));
+  for (const tr of update.transactions) {
+    for (const effect4 of tr.effects) {
+      if (effect4.is(startSnippet)) {
+        if (redoTr) {
+          (0, import_commands2.redo)(update.view);
+          (0, import_commands2.redo)(update.view);
+          (0, import_commands2.redo)(update.view);
+        }
+      } else if (effect4.is(undidEndSnippet)) {
+        if (undoTr) {
+          (0, import_commands2.undo)(update.view);
+          (0, import_commands2.undo)(update.view);
+          (0, import_commands2.undo)(update.view);
+        }
+      }
+    }
+  }
+  if (undoTr) {
+    removeEmptyTabstops(update.view);
+  }
+};
+
+// src/snippets/file_watch.ts
+function onFileChange(plugin, file) {
+  return __async(this, null, function* () {
+    if (!plugin.settings.loadSnippetsFromFile)
+      return;
+    if (!(file instanceof import_obsidian6.TFile))
+      return;
+    if (file.path === plugin.settings.snippetsFileLocation || fileIsInSnippetsFolder(plugin, file)) {
+      try {
+        yield debouncedSetSnippetsFromFileOrFolder(plugin);
+      } catch (e) {
+        new import_obsidian6.Notice("Failed to load snippets.", 5e3);
+      }
+    }
+  });
+}
+var onFileCreate = (plugin, file) => {
+  if (!plugin.settings.loadSnippetsFromFile)
+    return;
+  if (file instanceof import_obsidian6.TFile && fileIsInSnippetsFolder(plugin, file)) {
+    debouncedSetSnippetsFromFileOrFolder(plugin);
+  }
+};
+var onFileDelete = (plugin, file) => {
+  if (!plugin.settings.loadSnippetsFromFile)
+    return;
+  const snippetDir = plugin.app.vault.getAbstractFileByPath(plugin.settings.snippetsFileLocation);
+  const isFolder = snippetDir instanceof import_obsidian6.TFolder;
+  if (file instanceof import_obsidian6.TFile && (isFolder && file.path.contains(snippetDir.path))) {
+    debouncedSetSnippetsFromFileOrFolder(plugin);
+  }
+};
 function getSnippetsWithinFolder(folder) {
   return __async(this, null, function* () {
     const snippets2 = [];
     for (const fileOrFolder of folder.children) {
-      if (fileOrFolder instanceof import_obsidian5.TFile) {
+      if (fileOrFolder instanceof import_obsidian6.TFile) {
         const content = yield this.app.vault.cachedRead(fileOrFolder);
         try {
           snippets2.push(...getSnippetsFromString(content));
         } catch (e) {
           console.log(`Failed to load snippet file ${fileOrFolder.path}:`, e);
-          new import_obsidian5.Notice(`Failed to load snippet file ${fileOrFolder.name}`);
+          new import_obsidian6.Notice(`Failed to load snippet file ${fileOrFolder.name}`);
         }
       } else {
         const newSnippets = yield getSnippetsWithinFolder(fileOrFolder);
@@ -7543,12 +7623,30 @@ function getSnippetsWithinFolder(folder) {
     return snippets2;
   });
 }
-var debouncedSetSnippetsFromFileOrFolder = (0, import_obsidian5.debounce)((plugin, path) => __async(void 0, null, function* () {
+function isInFolder(file, dir) {
+  let cur = file.parent;
+  let cnt = 0;
+  while (cur && !cur.isRoot() && cnt < 100) {
+    if (cur.path === dir.path)
+      return true;
+    cur = cur.parent;
+    cnt++;
+  }
+  return false;
+}
+var fileIsInSnippetsFolder = (plugin, file) => {
+  const snippetDir = plugin.app.vault.getAbstractFileByPath(plugin.settings.snippetsFileLocation);
+  const isFolder = snippetDir instanceof import_obsidian6.TFolder;
+  return isFolder && isInFolder(file, snippetDir);
+};
+var debouncedSetSnippetsFromFileOrFolder = (0, import_obsidian6.debounce)((plugin, path) => __async(void 0, null, function* () {
+  if (!plugin.settings.loadSnippetsFromFile)
+    return;
   if (!path)
     path = plugin.settings.snippetsFileLocation;
   let snippets2;
   const fileOrFolder = plugin.app.vault.getAbstractFileByPath(path);
-  if (fileOrFolder instanceof import_obsidian5.TFolder) {
+  if (fileOrFolder instanceof import_obsidian6.TFolder) {
     snippets2 = yield getSnippetsWithinFolder(fileOrFolder);
   } else {
     const content = yield plugin.app.vault.cachedRead(fileOrFolder);
@@ -7556,20 +7654,23 @@ var debouncedSetSnippetsFromFileOrFolder = (0, import_obsidian5.debounce)((plugi
   }
   sortSnippets(snippets2);
   plugin.snippets = snippets2;
-  new import_obsidian5.Notice("Successfully reloaded snippets.", 5e3);
+  new import_obsidian6.Notice("Successfully reloaded snippets.", 5e3);
 }), 500, true);
 
 // src/settings.ts
 var DEFAULT_SETTINGS = {
   snippets: DEFAULT_SNIPPETS,
   snippetsEnabled: true,
+  snippetsTrigger: "Tab",
+  removeSnippetWhitespace: true,
   loadSnippetsFromFile: false,
   snippetsFileLocation: "",
   concealEnabled: false,
   colorPairedBracketsEnabled: true,
   highlightCursorBracketsEnabled: true,
-  inlineMathPreviewEnabled: true,
+  mathPreviewEnabled: true,
   autofractionEnabled: true,
+  autofractionSymbol: "\\frac",
   autofractionExcludedEnvs: `[
         ["^{", "}"],
         ["\\\\pu{", "}"]
@@ -7582,7 +7683,7 @@ var DEFAULT_SETTINGS = {
   autoEnlargeBracketsTriggers: "sum, int, frac, prod",
   wordDelimiters: "., +-\\n	:;!?\\/{}[]()=~$"
 };
-var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
+var LatexSuiteSettingTab = class extends import_obsidian7.PluginSettingTab {
   constructor(app, plugin) {
     super(app, plugin);
     this.plugin = plugin;
@@ -7595,15 +7696,15 @@ var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
     const { containerEl } = this;
     containerEl.empty();
     containerEl.createEl("div", { text: "Snippets" }).addClasses(["setting-item", "setting-item-heading", "setting-item-name"]);
-    new import_obsidian6.Setting(containerEl).setName("Enabled").setDesc("Whether snippets are enabled.").addToggle((toggle) => toggle.setValue(this.plugin.settings.snippetsEnabled).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Enabled").setDesc("Whether snippets are enabled.").addToggle((toggle) => toggle.setValue(this.plugin.settings.snippetsEnabled).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.snippetsEnabled = value;
       yield this.plugin.saveSettings();
     })));
-    const snippetsSetting = new import_obsidian6.Setting(containerEl).setName("Snippets").setDesc('Enter snippets here.  Remember to add a comma after each snippet, and escape all backslashes with an extra \\. Lines starting with "//" will be treated as comments and ignored.').setClass("snippets-text-area");
+    const snippetsSetting = new import_obsidian7.Setting(containerEl).setName("Snippets").setDesc('Enter snippets here.  Remember to add a comma after each snippet, and escape all backslashes with an extra \\. Lines starting with "//" will be treated as comments and ignored.').setClass("snippets-text-area");
     const customCSSWrapper = snippetsSetting.controlEl.createDiv("snippets-editor-wrapper");
     const snippetsFooter = snippetsSetting.controlEl.createDiv("snippets-footer");
     const validity = snippetsFooter.createDiv("snippets-editor-validity");
-    const validityIndicator = new import_obsidian6.ExtraButtonComponent(validity);
+    const validityIndicator = new import_obsidian7.ExtraButtonComponent(validity);
     validityIndicator.setIcon("checkmark").extraSettingsEl.addClass("snippets-editor-validity-indicator");
     const validityText = validity.createDiv("snippets-editor-validity-text");
     validityText.addClass("setting-item-description");
@@ -7615,7 +7716,7 @@ var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
       validityText.setText(success ? "Saved" : "Invalid syntax. Changes not saved");
     }
     const extensions = basicSetup;
-    const change = import_view9.EditorView.updateListener.of((v) => __async(this, null, function* () {
+    const change = import_view8.EditorView.updateListener.of((v) => __async(this, null, function* () {
       if (v.docChanged) {
         const value = v.state.doc.toString();
         let success = true;
@@ -7635,30 +7736,30 @@ var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
     this.snippetsEditor = createSnippetsEditor(this.plugin.settings.snippets, extensions);
     customCSSWrapper.appendChild(this.snippetsEditor.dom);
     const buttonsDiv = snippetsFooter.createDiv("snippets-editor-buttons");
-    const reset = new import_obsidian6.ButtonComponent(buttonsDiv);
+    const reset = new import_obsidian7.ButtonComponent(buttonsDiv);
     reset.setIcon("switch").setTooltip("Reset to default snippets").onClick(() => __async(this, null, function* () {
       new ConfirmationModal(this.plugin.app, "Are you sure? This will delete any custom snippets you have written.", (button) => button.setButtonText("Reset to default snippets").setWarning(), () => __async(this, null, function* () {
-        this.snippetsEditor.setState(import_state7.EditorState.create({ doc: DEFAULT_SNIPPETS, extensions }));
+        this.snippetsEditor.setState(import_state8.EditorState.create({ doc: DEFAULT_SNIPPETS, extensions }));
         updateValidityIndicator(true);
         this.plugin.setSnippets(DEFAULT_SNIPPETS);
         this.plugin.settings.snippets = DEFAULT_SNIPPETS;
         yield this.plugin.saveSettings();
       })).open();
     }));
-    const remove = new import_obsidian6.ButtonComponent(buttonsDiv);
+    const remove = new import_obsidian7.ButtonComponent(buttonsDiv);
     remove.setIcon("trash").setTooltip("Remove all snippets").onClick(() => __async(this, null, function* () {
       new ConfirmationModal(this.plugin.app, "Are you sure? This will delete any custom snippets you have written.", (button) => button.setButtonText("Remove all snippets").setWarning(), () => __async(this, null, function* () {
         const value = `[
 
 ]`;
-        this.snippetsEditor.setState(import_state7.EditorState.create({ doc: value, extensions }));
+        this.snippetsEditor.setState(import_state8.EditorState.create({ doc: value, extensions }));
         updateValidityIndicator(true);
         this.plugin.setSnippets(value);
         this.plugin.settings.snippets = value;
         yield this.plugin.saveSettings();
       })).open();
     }));
-    new import_obsidian6.Setting(containerEl).setName("Load snippets from file or folder").setDesc("Whether to load snippets from a specified file, or from all files within a folder (instead of from the plugin settings).").addToggle((toggle) => toggle.setValue(this.plugin.settings.loadSnippetsFromFile).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Load snippets from file or folder").setDesc("Whether to load snippets from a specified file, or from all files within a folder (instead of from the plugin settings).").addToggle((toggle) => toggle.setValue(this.plugin.settings.loadSnippetsFromFile).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.loadSnippetsFromFile = value;
       snippetsSetting.settingEl.toggleClass("hidden", value);
       if (this.snippetsFileLocEl != void 0)
@@ -7670,7 +7771,7 @@ var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
       }
       yield this.plugin.saveSettings();
     })));
-    const snippetsFileLoc = new import_obsidian6.Setting(containerEl).setName("Snippets file or folder location").setDesc("The file or folder to load snippets from.");
+    const snippetsFileLoc = new import_obsidian7.Setting(containerEl).setName("Snippets file or folder location").setDesc("The file or folder to load snippets from.");
     let inputEl;
     snippetsFileLoc.addText((text) => {
       text.setPlaceholder(DEFAULT_SETTINGS.snippetsFileLocation).setValue(this.plugin.settings.snippetsFileLocation).onChange((value) => __async(this, null, function* () {
@@ -7685,6 +7786,10 @@ var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
     const loadSnippetsFromFile = this.plugin.settings.loadSnippetsFromFile;
     snippetsSetting.settingEl.toggleClass("hidden", loadSnippetsFromFile);
     this.snippetsFileLocEl.toggleClass("hidden", !loadSnippetsFromFile);
+    new import_obsidian7.Setting(containerEl).setName("Key trigger for non-auto snippets").setDesc("What key to press to expand non-auto snippets.").addDropdown((dropdown) => dropdown.addOption("Tab", "Tab").addOption(" ", "Space").setValue(this.plugin.settings.snippetsTrigger).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.snippetsTrigger = value;
+      yield this.plugin.saveSettings();
+    })));
     containerEl.createEl("div", { text: "Conceal" }).addClasses(["setting-item", "setting-item-heading", "setting-item-name"]);
     const fragment = document.createDocumentFragment();
     const line1 = document.createElement("div");
@@ -7697,7 +7802,7 @@ var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
     const line4 = document.createElement("div");
     line4.setText("Disabled by default to not confuse new users. However, I recommend turning this on once you are comfortable with the plugin!");
     fragment.append(line1, line2, line3, space2, line4);
-    new import_obsidian6.Setting(containerEl).setName("Enabled").setDesc(fragment).addToggle((toggle) => toggle.setValue(this.plugin.settings.concealEnabled).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Enabled").setDesc(fragment).addToggle((toggle) => toggle.setValue(this.plugin.settings.concealEnabled).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.concealEnabled = value;
       if (value) {
         this.plugin.enableExtension(concealPlugin.extension);
@@ -7707,7 +7812,7 @@ var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
       yield this.plugin.saveSettings();
     })));
     containerEl.createEl("div", { text: "Highlight and color brackets" }).addClasses(["setting-item", "setting-item-heading", "setting-item-name"]);
-    new import_obsidian6.Setting(containerEl).setName("Color paired brackets").setDesc("Whether to colorize matching brackets.").addToggle((toggle) => toggle.setValue(this.plugin.settings.colorPairedBracketsEnabled).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Color paired brackets").setDesc("Whether to colorize matching brackets.").addToggle((toggle) => toggle.setValue(this.plugin.settings.colorPairedBracketsEnabled).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.colorPairedBracketsEnabled = value;
       if (value) {
         this.plugin.enableExtension(colorPairedBracketsPluginLowestPrec);
@@ -7716,7 +7821,7 @@ var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
       }
       yield this.plugin.saveSettings();
     })));
-    new import_obsidian6.Setting(containerEl).setName("Highlight matching bracket beneath cursor").setDesc("When the cursor is adjacent to a bracket, highlight the matching bracket.").addToggle((toggle) => toggle.setValue(this.plugin.settings.highlightCursorBracketsEnabled).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Highlight matching bracket beneath cursor").setDesc("When the cursor is adjacent to a bracket, highlight the matching bracket.").addToggle((toggle) => toggle.setValue(this.plugin.settings.highlightCursorBracketsEnabled).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.highlightCursorBracketsEnabled = value;
       if (value) {
         this.plugin.enableExtension(highlightCursorBracketsPlugin.extension);
@@ -7725,9 +7830,16 @@ var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
       }
       yield this.plugin.saveSettings();
     })));
-    containerEl.createEl("div", { text: "Inline math preview" }).addClasses(["setting-item", "setting-item-heading", "setting-item-name"]);
-    new import_obsidian6.Setting(containerEl).setName("Enabled").setDesc("When inside inline math, show a popup preview window of the rendered math.").addToggle((toggle) => toggle.setValue(this.plugin.settings.inlineMathPreviewEnabled).onChange((value) => __async(this, null, function* () {
-      this.plugin.settings.inlineMathPreviewEnabled = value;
+    containerEl.createEl("div", { text: "Math popup preview" }).addClasses(["setting-item", "setting-item-heading", "setting-item-name"]);
+    const popup_fragment = document.createDocumentFragment();
+    const popup_line1 = document.createElement("div");
+    popup_line1.setText("When inside an equation, show a popup preview window of the rendered math.");
+    const popup_space = document.createElement("br");
+    const popup_line4 = document.createElement("div");
+    popup_line4.setText("The popup preview will be shown for all inline math equations, as well as for block math equations in Source mode.");
+    popup_fragment.append(popup_line1, popup_space, popup_line4);
+    new import_obsidian7.Setting(containerEl).setName("Enabled").setDesc(popup_fragment).addToggle((toggle) => toggle.setValue(this.plugin.settings.mathPreviewEnabled).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.mathPreviewEnabled = value;
       if (value) {
         this.plugin.enableExtension(cursorTooltipField);
         this.plugin.enableExtension(cursorTooltipBaseTheme);
@@ -7738,57 +7850,65 @@ var LatexSuiteSettingTab = class extends import_obsidian6.PluginSettingTab {
       yield this.plugin.saveSettings();
     })));
     containerEl.createEl("div", { text: "Auto-fraction" }).addClasses(["setting-item", "setting-item-heading", "setting-item-name"]);
-    new import_obsidian6.Setting(containerEl).setName("Enabled").setDesc("Whether auto-fraction is enabled.").addToggle((toggle) => toggle.setValue(this.plugin.settings.autofractionEnabled).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Enabled").setDesc("Whether auto-fraction is enabled.").addToggle((toggle) => toggle.setValue(this.plugin.settings.autofractionEnabled).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.autofractionEnabled = value;
       yield this.plugin.saveSettings();
     })));
-    new import_obsidian6.Setting(containerEl).setName("Excluded environments").setDesc('A list of environments to exclude auto-fraction from running in. For example, to exclude auto-fraction from running while inside an exponent, such as e^{...}, use  ["^{", "}"]').addTextArea((text) => text.setPlaceholder('[ ["^{", "}] ]').setValue(this.plugin.settings.autofractionExcludedEnvs).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Fraction symbol").setDesc("The fraction symbol to use in the replacement. e.g. \\frac, \\dfrac, \\tfrac").addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.autofractionSymbol).setValue(this.plugin.settings.autofractionSymbol).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.autofractionSymbol = value;
+      yield this.plugin.saveSettings();
+    })));
+    new import_obsidian7.Setting(containerEl).setName("Excluded environments").setDesc('A list of environments to exclude auto-fraction from running in. For example, to exclude auto-fraction from running while inside an exponent, such as e^{...}, use  ["^{", "}"]').addTextArea((text) => text.setPlaceholder('[ ["^{", "}] ]').setValue(this.plugin.settings.autofractionExcludedEnvs).onChange((value) => __async(this, null, function* () {
       this.plugin.setAutofractionExcludedEnvs(value);
       this.plugin.settings.autofractionExcludedEnvs = value;
       yield this.plugin.saveSettings();
     })));
-    new import_obsidian6.Setting(containerEl).setName("Breaking characters").setDesc('A list of characters that denote the start/end of a fraction. e.g. if + is included in the list, "a+b/c" will expand to "a+\\frac{b}{c}". If + is not in the list, it will expand to "\\frac{a+b}{c}".').addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.autofractionBreakingChars).setValue(this.plugin.settings.autofractionBreakingChars).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Breaking characters").setDesc('A list of characters that denote the start/end of a fraction. e.g. if + is included in the list, "a+b/c" will expand to "a+\\frac{b}{c}". If + is not in the list, it will expand to "\\frac{a+b}{c}".').addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.autofractionBreakingChars).setValue(this.plugin.settings.autofractionBreakingChars).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.autofractionBreakingChars = value;
       yield this.plugin.saveSettings();
     })));
     containerEl.createEl("div", { text: "Matrix shortcuts" }).addClasses(["setting-item", "setting-item-heading", "setting-item-name"]);
-    new import_obsidian6.Setting(containerEl).setName("Enabled").setDesc("Whether matrix shortcuts are enabled.").addToggle((toggle) => toggle.setValue(this.plugin.settings.matrixShortcutsEnabled).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Enabled").setDesc("Whether matrix shortcuts are enabled.").addToggle((toggle) => toggle.setValue(this.plugin.settings.matrixShortcutsEnabled).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.matrixShortcutsEnabled = value;
       yield this.plugin.saveSettings();
     })));
-    new import_obsidian6.Setting(containerEl).setName("Environments").setDesc("A list of environment names to run the matrix shortcuts in, separated by commas.").addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.matrixShortcutsEnvNames).setValue(this.plugin.settings.matrixShortcutsEnvNames).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Environments").setDesc("A list of environment names to run the matrix shortcuts in, separated by commas.").addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.matrixShortcutsEnvNames).setValue(this.plugin.settings.matrixShortcutsEnvNames).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.matrixShortcutsEnvNames = value;
       this.plugin.matrixShortcutsEnvNames = value.replace(/\s/g, "").split(",");
       yield this.plugin.saveSettings();
     })));
     containerEl.createEl("div", { text: "Tabout" }).addClasses(["setting-item", "setting-item-heading", "setting-item-name"]);
-    new import_obsidian6.Setting(containerEl).setName("Enabled").setDesc("Whether tabout is enabled.").addToggle((toggle) => toggle.setValue(this.plugin.settings.taboutEnabled).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Enabled").setDesc("Whether tabout is enabled.").addToggle((toggle) => toggle.setValue(this.plugin.settings.taboutEnabled).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.taboutEnabled = value;
       yield this.plugin.saveSettings();
     })));
     containerEl.createEl("div", { text: "Auto-enlarge brackets" }).addClasses(["setting-item", "setting-item-heading", "setting-item-name"]);
-    new import_obsidian6.Setting(containerEl).setName("Enabled").setDesc("Whether to automatically enlarge brackets containing e.g. sum, int, frac.").addToggle((toggle) => toggle.setValue(this.plugin.settings.autoEnlargeBrackets).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Enabled").setDesc("Whether to automatically enlarge brackets containing e.g. sum, int, frac.").addToggle((toggle) => toggle.setValue(this.plugin.settings.autoEnlargeBrackets).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.autoEnlargeBrackets = value;
       yield this.plugin.saveSettings();
     })));
-    new import_obsidian6.Setting(containerEl).setName("Triggers").setDesc("A list of symbols that should trigger auto-enlarge brackets, separated by commas.").addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.autoEnlargeBracketsTriggers).setValue(this.plugin.settings.autoEnlargeBracketsTriggers).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Triggers").setDesc("A list of symbols that should trigger auto-enlarge brackets, separated by commas.").addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.autoEnlargeBracketsTriggers).setValue(this.plugin.settings.autoEnlargeBracketsTriggers).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.autoEnlargeBracketsTriggers = value;
       this.plugin.autoEnlargeBracketsTriggers = value.replace(/\s/g, "").split(",");
       yield this.plugin.saveSettings();
     })));
     containerEl.createEl("div", { text: "Misc" }).addClasses(["setting-item", "setting-item-heading", "setting-item-name"]);
-    new import_obsidian6.Setting(containerEl).setName("Word delimiters").setDesc('Symbols that will be treated as word delimiters, for use with the "w" snippet option.').addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.wordDelimiters).setValue(this.plugin.settings.wordDelimiters).onChange((value) => __async(this, null, function* () {
+    new import_obsidian7.Setting(containerEl).setName("Word delimiters").setDesc('Symbols that will be treated as word delimiters, for use with the "w" snippet option.').addText((text) => text.setPlaceholder(DEFAULT_SETTINGS.wordDelimiters).setValue(this.plugin.settings.wordDelimiters).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.wordDelimiters = value;
+      yield this.plugin.saveSettings();
+    })));
+    new import_obsidian7.Setting(containerEl).setName("Remove trailing whitespaces in snippets in inline math").setDesc("Whether to remove trailing whitespaces when expanding snippets at the end of inline math blocks.").addToggle((toggle) => toggle.setValue(this.plugin.settings.removeSnippetWhitespace).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.removeSnippetWhitespace = value;
       yield this.plugin.saveSettings();
     })));
   }
 };
-var ConfirmationModal = class extends import_obsidian6.Modal {
+var ConfirmationModal = class extends import_obsidian7.Modal {
   constructor(app, body, buttonCallback, clickCallback) {
     super(app);
     this.contentEl.addClass("latex-suite-confirmation-modal");
     this.contentEl.createEl("p", { text: body });
-    new import_obsidian6.Setting(this.contentEl).addButton((button) => {
+    new import_obsidian7.Setting(this.contentEl).addButton((button) => {
       buttonCallback(button);
       button.onClick(() => __async(this, null, function* () {
         yield clickCallback();
@@ -7798,32 +7918,53 @@ var ConfirmationModal = class extends import_obsidian6.Modal {
   }
 };
 function createSnippetsEditor(content, extensions) {
-  const view = new import_view9.EditorView({
-    state: import_state7.EditorState.create({ doc: content, extensions })
+  const view = new import_view8.EditorView({
+    state: import_state8.EditorState.create({ doc: content, extensions })
   });
   return view;
 }
 
 // src/main.ts
-var import_view11 = __toModule(require("@codemirror/view"));
-var import_state9 = __toModule(require("@codemirror/state"));
-var import_commands4 = __toModule(require("@codemirror/commands"));
-
-// src/snippets/snippets.ts
-var SNIPPET_VARIABLES = {
-  "${GREEK}": "alpha|beta|gamma|Gamma|delta|Delta|epsilon|varepsilon|zeta|eta|theta|Theta|iota|kappa|lambda|Lambda|mu|nu|xi|Xi|pi|Pi|rho|sigma|Sigma|tau|upsilon|varphi|phi|Phi|chi|psi|Psi|omega|Omega",
-  "${SYMBOL}": "hbar|ell|nabla|infty|dots|leftrightarrow|mapsto|setminus|mid|cap|cup|land|lor|subseteq|subset|implies|impliedby|iff|exists|equiv|square|neq|geq|leq|gg|ll|sim|simeq|approx|propto|cdot|oplus|otimes|times|star|perp|det|exp|ln|log|partial",
-  "${SHORT_SYMBOL}": "to|pm|mp"
-};
-var EXCLUSIONS = {
-  "([A-Za-z])(\\d)": { openSymbol: "\\pu{", closeSymbol: "}" },
-  "->": { openSymbol: "\\ce{", closeSymbol: "}" }
-};
-
-// src/snippets/snippet_manager.ts
 var import_view10 = __toModule(require("@codemirror/view"));
-var import_state8 = __toModule(require("@codemirror/state"));
+var import_state11 = __toModule(require("@codemirror/state"));
+
+// src/snippets/snippet_management.ts
+var import_view9 = __toModule(require("@codemirror/view"));
+var import_state10 = __toModule(require("@codemirror/state"));
 var import_commands3 = __toModule(require("@codemirror/commands"));
+
+// src/snippets/snippet_queue_state_field.ts
+var import_state9 = __toModule(require("@codemirror/state"));
+var queueSnippetEffect = import_state9.StateEffect.define();
+var clearSnippetQueueEffect = import_state9.StateEffect.define();
+var snippetQueueStateField = import_state9.StateField.define({
+  create(editorState) {
+    return [];
+  },
+  update(oldState, transaction) {
+    let snippetQueue = oldState;
+    for (const effect4 of transaction.effects) {
+      if (effect4.is(queueSnippetEffect)) {
+        snippetQueue.push(effect4.value);
+      } else if (effect4.is(clearSnippetQueueEffect)) {
+        snippetQueue = [];
+      }
+    }
+    return snippetQueue;
+  }
+});
+function queueSnippet(view, snippet) {
+  view.dispatch({
+    effects: [queueSnippetEffect.of(snippet)]
+  });
+}
+function clearSnippetQueue(view) {
+  view.dispatch({
+    effects: [clearSnippetQueueEffect.of(null)]
+  });
+}
+
+// src/snippets/snippet_management.ts
 var COLORS = ["lightskyblue", "orange", "lime", "pink", "cornsilk", "magenta", "navajowhite"];
 var TabstopReference = class {
   constructor(view, colorIndex) {
@@ -7855,7 +7996,7 @@ var TabstopReference = class {
     const ranges = [];
     while (iter.value) {
       if (iter.value.spec.reference === this) {
-        ranges.push(import_state8.EditorSelection.range(iter.from, iter.to));
+        ranges.push(import_state10.EditorSelection.range(iter.from, iter.to));
       }
       iter.next();
     }
@@ -7867,239 +8008,546 @@ var TabstopReference = class {
     });
   }
 };
-var SnippetManager = class {
-  constructor() {
-    this.currentTabstopReferences = [];
-    this.snippetsToAdd = [];
+function getColorIndex(view) {
+  const currentTabstopReferences = view.state.field(tabstopsStateField);
+  let colorIndex = 0;
+  for (; colorIndex < COLORS.length; colorIndex++) {
+    if (!currentTabstopReferences.find((p) => p.getColorIndex() === colorIndex))
+      break;
   }
-  getColorIndex() {
-    let colorIndex = 0;
-    for (; colorIndex < COLORS.length; colorIndex++) {
-      if (!this.currentTabstopReferences.find((p) => p.getColorIndex() === colorIndex))
+  if (colorIndex === COLORS.length) {
+    colorIndex = Math.floor(Math.random() * COLORS.length);
+  }
+  return colorIndex;
+}
+function getColorClass(colorIndex) {
+  const prefix = "latex-suite-suggestion-placeholder";
+  const markerClass = prefix + " " + prefix + colorIndex;
+  return markerClass;
+}
+function getTabstopsFromSnippet(view, start2, replacement) {
+  const tabstops = [];
+  const text = view.state.doc.toString();
+  for (let i = start2; i < start2 + replacement.length; i++) {
+    if (!(text.charAt(i) === "$")) {
+      continue;
+    }
+    let number = parseInt(text.charAt(i + 1));
+    const tabstopStart = i;
+    let tabstopEnd = tabstopStart + 2;
+    let tabstopReplacement = "";
+    if (isNaN(number)) {
+      if (!(text.charAt(i + 1) === "{" && text.charAt(i + 3) === ":"))
+        continue;
+      number = parseInt(text.charAt(i + 2));
+      if (isNaN(number))
+        continue;
+      const closingIndex = findMatchingBracket(text, i + 1, "{", "}", false, start2 + replacement.length);
+      if (closingIndex === -1)
+        continue;
+      tabstopReplacement = text.slice(i + 4, closingIndex);
+      tabstopEnd = closingIndex + 1;
+      i = closingIndex;
+    }
+    const tabstop = { number, from: tabstopStart, to: tabstopEnd, replacement: tabstopReplacement };
+    tabstops.push(tabstop);
+  }
+  return tabstops;
+}
+function expandSnippets(view) {
+  const snippetsToAdd = view.state.field(snippetQueueStateField);
+  if (snippetsToAdd.length === 0)
+    return false;
+  const originalDoc = view.state.doc;
+  const originalDocLength = view.state.doc.length;
+  const snippets2 = snippetsToAdd;
+  const changes = snippets2;
+  const keyPresses = [];
+  for (const snippet of snippets2) {
+    if (snippet.keyPressed && snippet.keyPressed.length === 1) {
+      const prevChar = view.state.doc.sliceString(snippet.to - 1, snippet.to);
+      const from = snippet.to === 0 ? 0 : snippet.to - 1;
+      keyPresses.push({ from, to: snippet.to, insert: prevChar + snippet.keyPressed });
+    }
+  }
+  view.dispatch({
+    changes: keyPresses,
+    annotations: import_commands3.isolateHistory.of("full")
+  });
+  const undoKeyPresses = import_state10.ChangeSet.of(keyPresses, originalDocLength).invert(originalDoc);
+  const changesAsChangeSet = import_state10.ChangeSet.of(changes, originalDocLength);
+  const combinedChanges = undoKeyPresses.compose(changesAsChangeSet);
+  view.dispatch({
+    changes: combinedChanges,
+    effects: startSnippet.of(null)
+  });
+  const changeSet = import_state10.ChangeSet.of(changes, originalDocLength);
+  const oldPositions = snippets2.map((change) => change.from);
+  const newPositions = oldPositions.map((pos) => changeSet.mapPos(pos));
+  let tabstopsToAdd = [];
+  for (let i = 0; i < snippets2.length; i++) {
+    tabstopsToAdd = tabstopsToAdd.concat(getTabstopsFromSnippet(view, newPositions[i], snippets2[i].insert));
+  }
+  if (tabstopsToAdd.length === 0) {
+    clearSnippetQueue(view);
+    return true;
+  }
+  insertTabstopReferences(view, tabstopsToAdd);
+  insertTabstopsTransaction(view, tabstopsToAdd);
+  clearSnippetQueue(view);
+  return true;
+}
+function insertTabstopReferences(view, tabstops, append = false) {
+  const numbers = Array.from(new Set(tabstops.map((tabstop) => tabstop.number))).sort().reverse();
+  if (!append) {
+    const colorIndex = getColorIndex(view);
+    for (let i = 0; i < numbers.length; i++) {
+      const reference2 = new TabstopReference(view, colorIndex);
+      addTabstop(view, reference2);
+    }
+  }
+}
+function insertTabstopsTransaction(view, tabstops) {
+  const effects = tabstops.map((tabstop) => {
+    const currentTabstopReferences2 = view.state.field(tabstopsStateField);
+    const reference2 = currentTabstopReferences2[tabstop.number];
+    const mark = import_view9.Decoration.mark({
+      inclusive: true,
+      attributes: {},
+      class: getColorClass(reference2.colorIndex),
+      reference: reference2
+    }).range(tabstop.from, tabstop.to);
+    return addMark.of(mark);
+  });
+  view.dispatch({
+    effects
+  });
+  const changes = tabstops.map((tabstop) => {
+    return { from: tabstop.from, to: tabstop.to, insert: tabstop.replacement };
+  });
+  view.dispatch({
+    changes
+  });
+  const currentTabstopReferences = view.state.field(tabstopsStateField);
+  const firstRef = currentTabstopReferences[0];
+  const selection = import_state10.EditorSelection.create(firstRef.ranges);
+  view.dispatch({
+    selection,
+    effects: endSnippet.of(null)
+  });
+  resetCursorBlink();
+  firstRef.removeFromEditor();
+  removeOnlyTabstop(view);
+}
+function selectTabstopReference(reference2) {
+  const view = reference2.view;
+  setSelections(view, reference2.ranges);
+  reference2.removeFromEditor();
+  removeOnlyTabstop(view);
+}
+function removeOnlyTabstop(view) {
+  const currentTabstopReferences = view.state.field(tabstopsStateField);
+  if (currentTabstopReferences.length === 1) {
+    let shouldClear = true;
+    const reference2 = currentTabstopReferences[0];
+    const markers = reference2.markers;
+    for (const marker of markers) {
+      if (!(marker.from === marker.to)) {
+        shouldClear = false;
         break;
+      }
     }
-    if (colorIndex === COLORS.length) {
-      colorIndex = Math.floor(Math.random() * COLORS.length);
+    if (shouldClear)
+      clearAllTabstops(reference2.view);
+  }
+}
+function isInsideATabstop(pos, view) {
+  const currentTabstopReferences = view.state.field(tabstopsStateField);
+  if (currentTabstopReferences.length === 0)
+    return false;
+  let isInside = false;
+  for (const tabstopReference of currentTabstopReferences) {
+    for (const range of tabstopReference.ranges) {
+      if (pos >= range.from && pos <= range.to) {
+        isInside = true;
+        break;
+      }
     }
-    return colorIndex;
+    if (isInside)
+      break;
   }
-  getColorClass(colorIndex) {
-    const prefix = "latex-suite-suggestion-placeholder";
-    const markerClass = prefix + " " + prefix + colorIndex;
-    return markerClass;
+  return isInside;
+}
+function isInsideLastTabstop(view) {
+  const currentTabstopReferences = view.state.field(tabstopsStateField);
+  if (currentTabstopReferences.length === 0)
+    return false;
+  let isInside = false;
+  const lastTabstopRef = currentTabstopReferences.slice(-1)[0];
+  const ranges = lastTabstopRef.ranges;
+  const lastRange = ranges[0];
+  const sel = view.state.selection.main;
+  isInside = sel.eq(lastRange);
+  return isInside;
+}
+function consumeAndGotoNextTabstop(view) {
+  let currentTabstopReferences = view.state.field(tabstopsStateField);
+  if (currentTabstopReferences.length === 0)
+    return false;
+  const oldCursor = view.state.selection.main;
+  consumeTabstop(view);
+  currentTabstopReferences = view.state.field(tabstopsStateField);
+  if (currentTabstopReferences.length === 0) {
+    setCursor(view, oldCursor.to);
+    return true;
   }
-  getTabstopsFromSnippet(view, start2, replacement) {
-    const tabstops = [];
-    const text = view.state.doc.toString();
-    for (let i = start2; i < start2 + replacement.length; i++) {
-      if (!(text.charAt(i) === "$")) {
+  const newTabstop = currentTabstopReferences[0];
+  const newMarkers = newTabstop.markers;
+  const cursor = view.state.selection.main;
+  const newMarker = newMarkers[0];
+  if (newMarkers.length === 0)
+    return consumeAndGotoNextTabstop(view);
+  if (newTabstop.markers.length === 1) {
+    if (newMarker.from <= cursor.from && newMarker.to >= cursor.to) {
+      setCursor(view, newMarker.to);
+    } else {
+      selectTabstopReference(newTabstop);
+    }
+  } else {
+    selectTabstopReference(newTabstop);
+  }
+  const newCursor = view.state.selection.main;
+  if (oldCursor.eq(newCursor))
+    return consumeAndGotoNextTabstop(view);
+  return true;
+}
+function removeAllTabstops(view) {
+  if (view) {
+    view.dispatch({
+      effects: clearMarks.of(null)
+    });
+    clearAllTabstops(view);
+  }
+}
+
+// src/snippets/snippets.ts
+var SNIPPET_VARIABLES = {
+  "${GREEK}": "alpha|beta|gamma|Gamma|delta|Delta|epsilon|varepsilon|zeta|eta|theta|Theta|iota|kappa|lambda|Lambda|mu|nu|xi|Xi|pi|Pi|rho|sigma|Sigma|tau|upsilon|varphi|phi|Phi|chi|psi|Psi|omega|Omega",
+  "${SYMBOL}": "hbar|ell|nabla|infty|dots|leftrightarrow|mapsto|setminus|mid|cap|cup|land|lor|subseteq|subset|implies|impliedby|iff|exists|equiv|square|neq|geq|leq|gg|ll|sim|simeq|approx|propto|cdot|oplus|otimes|times|star|perp|det|exp|ln|log|partial",
+  "${SHORT_SYMBOL}": "to|pm|mp"
+};
+var EXCLUSIONS = {
+  "([A-Za-z])(\\d)": { openSymbol: "\\pu{", closeSymbol: "}" },
+  "->": { openSymbol: "\\ce{", closeSymbol: "}" }
+};
+
+// src/features/auto_enlarge_brackets.ts
+var autoEnlargeBrackets = (view, plugin) => {
+  if (!plugin.settings.autoEnlargeBrackets)
+    return;
+  const result = getEquationBounds(view.state);
+  if (!result)
+    return false;
+  const { start: start2, end: end2 } = result;
+  const text = view.state.doc.toString();
+  const left2 = "\\left";
+  const right2 = "\\right";
+  for (let i = start2; i < end2; i++) {
+    const brackets2 = { "(": ")", "[": "]", "\\{": "\\}", "\\langle": "\\rangle", "\\lvert": "\\rvert" };
+    const openBrackets = Object.keys(brackets2);
+    let found = false;
+    let open = "";
+    for (const openBracket of openBrackets) {
+      if (text.slice(i, i + openBracket.length) === openBracket) {
+        found = true;
+        open = openBracket;
+        break;
+      }
+    }
+    if (!found)
+      continue;
+    const bracketSize = open.length;
+    const close = brackets2[open];
+    const j = findMatchingBracket(text, i, open, close, false, end2);
+    if (j === -1)
+      continue;
+    if (text.slice(i - left2.length, i) === left2 && text.slice(j - right2.length, j) === right2)
+      continue;
+    const bracketContents = text.slice(i + 1, j);
+    const containsTrigger = plugin.autoEnlargeBracketsTriggers.some((word) => bracketContents.contains("\\" + word));
+    if (!containsTrigger) {
+      i = j;
+      continue;
+    }
+    queueSnippet(view, { from: i, to: i + bracketSize, insert: left2 + open + " " });
+    queueSnippet(view, { from: j, to: j + bracketSize, insert: " " + right2 + close });
+  }
+  expandSnippets(view);
+};
+
+// src/features/run_snippets.ts
+var runSnippets = (view, key, withinMath, ranges, plugin) => {
+  let shouldAutoEnlargeBrackets = false;
+  for (const range of ranges) {
+    const result = runSnippetCursor(view, key, withinMath, range, plugin);
+    if (result.shouldAutoEnlargeBrackets)
+      shouldAutoEnlargeBrackets = true;
+  }
+  const success = expandSnippets(view);
+  if (shouldAutoEnlargeBrackets) {
+    autoEnlargeBrackets(view, plugin);
+  }
+  return success;
+};
+var runSnippetCursor = (view, key, withinMath, range, plugin) => {
+  const { from, to } = range;
+  const sel = view.state.sliceDoc(from, to);
+  for (const snippet of plugin.snippets) {
+    let effectiveLine = view.state.sliceDoc(0, to);
+    if (snippet.options.contains("m") && !withinMath) {
+      continue;
+    } else if (snippet.options.contains("t") && withinMath) {
+      continue;
+    }
+    if (snippet.options.contains("A") || snippet.replacement.contains("${VISUAL}")) {
+      if (!(key.length === 1))
+        continue;
+      effectiveLine += key;
+    } else if (!(key === plugin.settings.snippetsTrigger)) {
+      continue;
+    }
+    if (snippet.trigger in EXCLUSIONS) {
+      const environment = EXCLUSIONS[snippet.trigger];
+      if (isInsideEnvironment(view, to, environment))
+        continue;
+    }
+    const result = checkSnippet(snippet, effectiveLine, range, sel);
+    if (result === null)
+      continue;
+    const triggerPos = result.triggerPos;
+    if (snippet.options.contains("w")) {
+      const prevChar = view.state.sliceDoc(triggerPos - 1, triggerPos);
+      const nextChar = view.state.sliceDoc(to, to + 1);
+      const wordDelimiters = plugin.settings.wordDelimiters.replace("\\n", "\n");
+      const prevCharIsWordDelimiter = wordDelimiters.contains(prevChar);
+      const nextCharIsWordDelimiter = wordDelimiters.contains(nextChar);
+      if (!(prevCharIsWordDelimiter && nextCharIsWordDelimiter)) {
         continue;
       }
-      let number = parseInt(text.charAt(i + 1));
-      const tabstopStart = i;
-      let tabstopEnd = tabstopStart + 2;
-      let tabstopReplacement = "";
-      if (isNaN(number)) {
-        if (!(text.charAt(i + 1) === "{" && text.charAt(i + 3) === ":"))
-          continue;
-        number = parseInt(text.charAt(i + 2));
-        if (isNaN(number))
-          continue;
-        const closingIndex = findMatchingBracket(text, i + 1, "{", "}", false, start2 + replacement.length);
-        if (closingIndex === -1)
-          continue;
-        tabstopReplacement = text.slice(i + 4, closingIndex);
-        tabstopEnd = closingIndex + 1;
-        i = closingIndex;
-      }
-      const tabstop = { number, from: tabstopStart, to: tabstopEnd, replacement: tabstopReplacement };
-      tabstops.push(tabstop);
     }
-    return tabstops;
-  }
-  queueSnippet(snippet) {
-    this.snippetsToAdd.push(snippet);
-  }
-  clearSnippetQueue() {
-    this.snippetsToAdd = [];
-  }
-  expandSnippets(view) {
-    if (this.snippetsToAdd.length === 0)
-      return false;
-    const originalDoc = view.state.doc;
-    const originalDocLength = view.state.doc.length;
-    const snippets2 = this.snippetsToAdd;
-    const changes = snippets2;
-    const keyPresses = [];
-    for (const snippet of snippets2) {
-      if (snippet.keyPressed && snippet.keyPressed.length === 1) {
-        const prevChar = view.state.doc.sliceString(snippet.to - 1, snippet.to);
-        const from = snippet.to === 0 ? 0 : snippet.to - 1;
-        keyPresses.push({ from, to: snippet.to, insert: prevChar + snippet.keyPressed });
-      }
-    }
-    view.dispatch({
-      changes: keyPresses,
-      annotations: import_commands3.isolateHistory.of("full")
-    });
-    const undoKeyPresses = import_state8.ChangeSet.of(keyPresses, originalDocLength).invert(originalDoc);
-    const changesAsChangeSet = import_state8.ChangeSet.of(changes, originalDocLength);
-    const combinedChanges = undoKeyPresses.compose(changesAsChangeSet);
-    view.dispatch({
-      changes: combinedChanges,
-      effects: startSnippet.of(null)
-    });
-    const changeSet = import_state8.ChangeSet.of(changes, originalDocLength);
-    const oldPositions = snippets2.map((change) => change.from);
-    const newPositions = oldPositions.map((pos) => changeSet.mapPos(pos));
-    let tabstopsToAdd = [];
-    for (let i = 0; i < snippets2.length; i++) {
-      tabstopsToAdd = tabstopsToAdd.concat(this.getTabstopsFromSnippet(view, newPositions[i], snippets2[i].insert));
-    }
-    if (tabstopsToAdd.length === 0) {
-      this.snippetsToAdd = [];
-      return true;
-    }
-    this.insertTabstopReferences(view, tabstopsToAdd);
-    this.insertTabstopsTransaction(view, tabstopsToAdd);
-    this.snippetsToAdd = [];
-    return true;
-  }
-  insertTabstopReferences(view, tabstops, append = false) {
-    const numbers = Array.from(new Set(tabstops.map((tabstop) => tabstop.number))).sort().reverse();
-    if (!append) {
-      const colorIndex = this.getColorIndex();
-      for (let i = 0; i < numbers.length; i++) {
-        const reference2 = new TabstopReference(view, colorIndex);
-        this.currentTabstopReferences.unshift(reference2);
-      }
-    }
-  }
-  insertTabstopsTransaction(view, tabstops) {
-    const effects = tabstops.map((tabstop) => {
-      const reference2 = this.currentTabstopReferences[tabstop.number];
-      const mark = import_view10.Decoration.mark({
-        inclusive: true,
-        attributes: {},
-        class: this.getColorClass(reference2.colorIndex),
-        reference: reference2
-      }).range(tabstop.from, tabstop.to);
-      return addMark.of(mark);
-    });
-    view.dispatch({
-      effects
-    });
-    const changes = tabstops.map((tabstop) => {
-      return { from: tabstop.from, to: tabstop.to, insert: tabstop.replacement };
-    });
-    view.dispatch({
-      changes
-    });
-    const firstRef = this.currentTabstopReferences[0];
-    const selection = import_state8.EditorSelection.create(firstRef.ranges);
-    view.dispatch({
-      selection,
-      effects: endSnippet.of(null)
-    });
-    resetCursorBlink();
-    firstRef.removeFromEditor();
-    this.removeOnlyTabstop();
-  }
-  selectTabstopReference(reference2) {
-    setSelections(reference2.view, reference2.ranges);
-    reference2.removeFromEditor();
-    this.removeOnlyTabstop();
-  }
-  removeOnlyTabstop() {
-    if (this.currentTabstopReferences.length === 1) {
-      let shouldClear = true;
-      const reference2 = this.currentTabstopReferences[0];
-      const markers = reference2.markers;
-      for (const marker of markers) {
-        if (!(marker.from === marker.to)) {
-          shouldClear = false;
-          break;
-        }
-      }
-      if (shouldClear)
-        this.clearAllTabstops(reference2.view);
-    }
-  }
-  isInsideATabstop(pos) {
-    if (this.currentTabstopReferences.length === 0)
-      return false;
-    let isInside = false;
-    for (const tabstopReference of this.currentTabstopReferences) {
-      for (const range of tabstopReference.ranges) {
-        if (pos >= range.from && pos <= range.to) {
-          isInside = true;
-          break;
-        }
-      }
-      if (isInside)
-        break;
-    }
-    return isInside;
-  }
-  isInsideLastTabstop(view) {
-    if (this.currentTabstopReferences.length === 0)
-      return false;
-    let isInside = false;
-    const lastTabstopRef = this.currentTabstopReferences.slice(-1)[0];
-    const ranges = lastTabstopRef.ranges;
-    const lastRange = ranges[0];
-    const sel = view.state.selection.main;
-    isInside = sel.eq(lastRange);
-    return isInside;
-  }
-  consumeAndGotoNextTabstop(view) {
-    if (this.currentTabstopReferences.length === 0)
-      return false;
-    const oldCursor = view.state.selection.main;
-    this.currentTabstopReferences.shift();
-    if (this.currentTabstopReferences.length === 0) {
-      setCursor(view, oldCursor.to);
-      return true;
-    }
-    const newTabstop = this.currentTabstopReferences[0];
-    const newMarkers = newTabstop.markers;
-    const cursor = view.state.selection.main;
-    const newMarker = newMarkers[0];
-    if (newMarkers.length === 0)
-      return this.consumeAndGotoNextTabstop(view);
-    if (newTabstop.markers.length === 1) {
-      if (newMarker.from <= cursor.from && newMarker.to >= cursor.to) {
-        setCursor(view, newMarker.to);
+    let replacement = result.replacement;
+    if (withinMath && plugin.settings.removeSnippetWhitespace) {
+      let spaceIndex = 0;
+      if (replacement.endsWith(" ")) {
+        spaceIndex = -1;
       } else {
-        this.selectTabstopReference(newTabstop);
+        const lastThreeChars = replacement.slice(-3);
+        const lastChar = lastThreeChars.slice(-1);
+        if (lastThreeChars.slice(0, 2) === " $" && !isNaN(parseInt(lastChar))) {
+          spaceIndex = -3;
+        }
       }
-    } else {
-      this.selectTabstopReference(newTabstop);
+      if (spaceIndex != 0) {
+        const inlineMath = isWithinInlineEquation(view.state);
+        if (inlineMath) {
+          if (spaceIndex === -1) {
+            replacement = replacement.trimEnd();
+          } else if (spaceIndex === -3) {
+            replacement = replacement.slice(0, -3) + replacement.slice(-2);
+          }
+        }
+      }
     }
-    const newCursor = view.state.selection.main;
-    if (oldCursor.eq(newCursor))
-      return this.consumeAndGotoNextTabstop(view);
+    const start2 = triggerPos;
+    queueSnippet(view, { from: start2, to, insert: replacement, keyPressed: key });
+    const containsTrigger = plugin.autoEnlargeBracketsTriggers.some((word) => replacement.contains("\\" + word));
+    return { success: true, shouldAutoEnlargeBrackets: containsTrigger };
+  }
+  return { success: false, shouldAutoEnlargeBrackets: false };
+};
+var checkSnippet = (snippet, effectiveLine, range, sel) => {
+  let triggerPos;
+  let trigger = snippet.trigger;
+  trigger = insertSnippetVariables(trigger);
+  let replacement = snippet.replacement;
+  if (snippet.replacement.contains("${VISUAL}")) {
+    if (!sel)
+      return null;
+    if (!(effectiveLine.slice(-trigger.length) === trigger))
+      return null;
+    triggerPos = range.from;
+    replacement = snippet.replacement.replace("${VISUAL}", sel);
+  } else if (sel) {
+    return null;
+  } else if (!snippet.options.contains("r")) {
+    if (!(effectiveLine.slice(-trigger.length) === trigger))
+      return null;
+    triggerPos = effectiveLine.length - trigger.length;
+  } else {
+    const regex = new RegExp(trigger + "$");
+    const result = regex.exec(effectiveLine);
+    if (!result) {
+      return null;
+    }
+    for (let i = 1; i < result.length; i++) {
+      replacement = replacement.replaceAll("[[" + (i - 1) + "]]", result[i]);
+    }
+    triggerPos = result.index;
+  }
+  return { triggerPos, replacement };
+};
+var insertSnippetVariables = (trigger) => {
+  for (const [variable, replacement] of Object.entries(SNIPPET_VARIABLES)) {
+    trigger = trigger.replace(variable, replacement);
+  }
+  return trigger;
+};
+
+// src/features/autofraction.ts
+var runAutoFraction = (view, ranges, plugin) => {
+  for (const range of ranges) {
+    runAutoFractionCursor(view, range, plugin);
+  }
+  const success = expandSnippets(view);
+  if (success) {
+    autoEnlargeBrackets(view, plugin);
+  }
+  return success;
+};
+var runAutoFractionCursor = (view, range, plugin) => {
+  const { from, to } = range;
+  for (const env of plugin.autofractionExcludedEnvs) {
+    if (isInsideEnvironment(view, to, env)) {
+      return false;
+    }
+  }
+  const result = getEquationBounds(view.state);
+  if (!result)
+    return false;
+  const eqnStart = result.start;
+  let curLine = view.state.sliceDoc(0, to);
+  let start2 = eqnStart;
+  if (from != to) {
+    start2 = from;
+  } else {
+    const regex = new RegExp("(" + SNIPPET_VARIABLES["${GREEK}"] + ") ([^ ])", "g");
+    curLine = curLine.replace(regex, "$1#$2");
+    for (let i = curLine.length - 1; i >= eqnStart; i--) {
+      const curChar = curLine.charAt(i);
+      if ([")", "]", "}"].contains(curChar)) {
+        const closeBracket = curChar;
+        const openBracket = getOpenBracket(closeBracket);
+        const j = findMatchingBracket(curLine, i, openBracket, closeBracket, true);
+        if (j === -1)
+          return false;
+        i = j;
+        if (i < eqnStart) {
+          start2 = eqnStart;
+          break;
+        }
+      }
+      if (" $([{\n".concat(plugin.settings.autofractionBreakingChars).contains(curChar)) {
+        start2 = i + 1;
+        break;
+      }
+    }
+  }
+  let numerator = view.state.sliceDoc(start2, to);
+  if (numerator === "")
+    return false;
+  if (curLine.charAt(start2) === "(" && curLine.charAt(to - 1) === ")") {
+    numerator = numerator.slice(1, -1);
+  }
+  const replacement = `${plugin.settings.autofractionSymbol}{${numerator}}{$0}$1`;
+  queueSnippet(view, { from: start2, to, insert: replacement, keyPressed: "/" });
+  return true;
+};
+
+// src/features/tabout.ts
+var tabout = (view, withinEquation) => {
+  if (!withinEquation)
+    return false;
+  const pos = view.state.selection.main.to;
+  const result = getEquationBounds(view.state);
+  if (!result)
+    return false;
+  const end2 = result.end;
+  const d = view.state.doc;
+  const text = d.toString();
+  const rangle = "\\rangle";
+  for (let i = pos; i < end2; i++) {
+    if (["}", ")", "]", ">", "|"].contains(text.charAt(i))) {
+      setCursor(view, i + 1);
+      return true;
+    } else if (text.slice(i, i + rangle.length) === rangle) {
+      setCursor(view, i + rangle.length);
+      return true;
+    }
+  }
+  const textBtwnCursorAndEnd = d.sliceString(pos, end2);
+  const atEnd = textBtwnCursorAndEnd.trim().length === 0;
+  if (!atEnd)
+    return false;
+  const inlineMath = d.sliceString(end2, end2 + 2) != "$$";
+  if (inlineMath) {
+    setCursor(view, end2 + 1);
+  } else {
+    const dollarLine = d.lineAt(end2 + 2);
+    if (dollarLine.number === d.lines) {
+      replaceRange(view, dollarLine.to, dollarLine.to, "\n");
+    }
+    setCursor(view, dollarLine.to + 1);
+    const line = d.lineAt(pos);
+    replaceRange(view, line.from, line.to, line.text.trim());
+  }
+  return true;
+};
+var shouldTaboutByCloseBracket = (view, keyPressed) => {
+  const sel = view.state.selection.main;
+  if (!sel.empty)
+    return;
+  const pos = sel.from;
+  const c = getCharacterAtPos(view, pos);
+  const brackets2 = [")", "]", "}"];
+  if (c === keyPressed && brackets2.contains(c)) {
     return true;
-  }
-  tidyTabstopReferences() {
-    this.currentTabstopReferences = this.currentTabstopReferences.filter((tabstopReference) => tabstopReference.markers.length > 0);
-  }
-  clearAllTabstops(view) {
-    if (view) {
-      view.dispatch({
-        effects: clearMarks.of(null)
-      });
-    }
-    this.currentTabstopReferences = [];
-  }
-  onunload() {
-    this.clearAllTabstops();
+  } else {
+    return false;
   }
 };
 
-// src/editor_commands.ts
+// src/features/matrix_shortcuts.ts
+var runMatrixShortcuts = (view, key, shiftKey, pos, matrixShortcutsEnvNames) => {
+  let isInsideAnEnv = false;
+  for (const envName of matrixShortcutsEnvNames) {
+    const env = { openSymbol: "\\begin{" + envName + "}", closeSymbol: "\\end{" + envName + "}" };
+    isInsideAnEnv = isInsideEnvironment(view, pos, env);
+    if (isInsideAnEnv)
+      break;
+  }
+  if (!isInsideAnEnv)
+    return false;
+  if (key === "Tab") {
+    view.dispatch(view.state.replaceSelection(" & "));
+    return true;
+  } else if (key === "Enter") {
+    if (shiftKey) {
+      const d = view.state.doc;
+      const nextLineNo = d.lineAt(pos).number + 1;
+      const nextLine = d.line(nextLineNo);
+      setCursor(view, nextLine.to);
+    } else {
+      view.dispatch(view.state.replaceSelection(" \\\\\n"));
+    }
+    return true;
+  } else {
+    return false;
+  }
+};
+
+// src/features/editor_commands.ts
 function boxCurrentEquation(view) {
-  const result = getEquationBounds(view);
+  const result = getEquationBounds(view.state);
   if (!result)
     return false;
   const { start: start2, end: end2 } = result;
@@ -8117,7 +8565,7 @@ function getBoxEquationCommand() {
     name: "Box current equation",
     editorCheckCallback: (checking, editor, markdownView) => {
       const view = editor.cm;
-      const withinEquation = isWithinEquation(view);
+      const withinEquation = isWithinEquation(view.state);
       if (checking)
         return withinEquation;
       if (!withinEquation)
@@ -8133,12 +8581,12 @@ function getSelectEquationCommand() {
     name: "Select current equation",
     editorCheckCallback: (checking, editor, markdownView) => {
       const view = editor.cm;
-      const withinEquation = isWithinEquation(view);
+      const withinEquation = isWithinEquation(view.state);
       if (checking)
         return withinEquation;
       if (!withinEquation)
         return;
-      const result = getEquationBounds(view);
+      const result = getEquationBounds(view.state);
       if (!result)
         return false;
       let { start: start2, end: end2 } = result;
@@ -8152,22 +8600,58 @@ function getSelectEquationCommand() {
     }
   };
 }
-var editorCommands = [
-  getBoxEquationCommand(),
-  getSelectEquationCommand()
-];
+function getEnableAllFeaturesCommand(plugin) {
+  return {
+    id: "latex-suite-enable-all-features",
+    name: "Enable all features",
+    callback: () => __async(this, null, function* () {
+      plugin.settings.snippetsEnabled = true;
+      plugin.settings.autofractionEnabled = true;
+      plugin.settings.matrixShortcutsEnabled = true;
+      plugin.settings.taboutEnabled = true;
+      plugin.settings.autoEnlargeBrackets = true;
+      yield plugin.saveSettings();
+    })
+  };
+}
+function getDisableAllFeaturesCommand(plugin) {
+  return {
+    id: "latex-suite-disable-all-features",
+    name: "Disable all features",
+    callback: () => __async(this, null, function* () {
+      plugin.settings.snippetsEnabled = false;
+      plugin.settings.autofractionEnabled = false;
+      plugin.settings.matrixShortcutsEnabled = false;
+      plugin.settings.taboutEnabled = false;
+      plugin.settings.autoEnlargeBrackets = false;
+      yield plugin.saveSettings();
+    })
+  };
+}
+var getEditorCommands = (plugin) => {
+  return [
+    getBoxEquationCommand(),
+    getSelectEquationCommand(),
+    getEnableAllFeaturesCommand(plugin),
+    getDisableAllFeaturesCommand(plugin)
+  ];
+};
 
 // src/main.ts
-var LatexSuitePlugin = class extends import_obsidian7.Plugin {
+var LatexSuitePlugin = class extends import_obsidian8.Plugin {
   constructor() {
     super(...arguments);
     this.cursorTriggeredByChange = false;
-    this.shouldAutoEnlargeBrackets = false;
     this.editorExtensions = [];
-    this.fileIsInSnippetsFolder = (file) => {
-      const snippetDir = this.app.vault.getAbstractFileByPath(this.settings.snippetsFileLocation);
-      const isFolder = snippetDir instanceof import_obsidian7.TFolder;
-      return isFolder && isInFolder(file, snippetDir);
+    this.handleUpdate = (update) => {
+      if (update.docChanged) {
+        this.handleDocChange();
+      }
+      if (update.selectionSet) {
+        const pos = update.state.selection.main.head;
+        this.handleCursorActivity(update.view, pos);
+      }
+      handleUndoRedo(update);
     };
     this.handleDocChange = () => {
       this.cursorTriggeredByChange = true;
@@ -8177,62 +8661,14 @@ var LatexSuitePlugin = class extends import_obsidian7.Plugin {
         this.cursorTriggeredByChange = false;
         return;
       }
-      if (!this.snippetManager.isInsideATabstop(pos) || this.snippetManager.isInsideLastTabstop(view)) {
-        this.snippetManager.clearAllTabstops(view);
-      }
-    };
-    this.handleUndoRedo = (update) => {
-      const undoTr = update.transactions.find((tr) => tr.isUserEvent("undo"));
-      const redoTr = update.transactions.find((tr) => tr.isUserEvent("redo"));
-      for (const tr of update.transactions) {
-        for (const effect4 of tr.effects) {
-          if (effect4.is(startSnippet)) {
-            if (redoTr) {
-              (0, import_commands4.redo)(update.view);
-              (0, import_commands4.redo)(update.view);
-              (0, import_commands4.redo)(update.view);
-            }
-          } else if (effect4.is(undidEndSnippet)) {
-            if (undoTr) {
-              (0, import_commands4.undo)(update.view);
-              (0, import_commands4.undo)(update.view);
-              (0, import_commands4.undo)(update.view);
-            }
-          }
-        }
-      }
-      if (undoTr) {
-        this.snippetManager.tidyTabstopReferences();
+      if (!isInsideATabstop(pos, view) || isInsideLastTabstop(view)) {
+        removeAllTabstops(view);
       }
     };
     this.addEditorCommands = () => {
-      for (const command of editorCommands) {
+      for (const command of getEditorCommands(this)) {
         this.addCommand(command);
       }
-      this.addCommand({
-        id: "latex-suite-enable-all-features",
-        name: "Enable all features",
-        callback: () => __async(this, null, function* () {
-          this.settings.snippetsEnabled = true;
-          this.settings.autofractionEnabled = true;
-          this.settings.matrixShortcutsEnabled = true;
-          this.settings.taboutEnabled = true;
-          this.settings.autoEnlargeBrackets = true;
-          yield this.saveSettings();
-        })
-      });
-      this.addCommand({
-        id: "latex-suite-disable-all-features",
-        name: "Disable all features",
-        callback: () => __async(this, null, function* () {
-          this.settings.snippetsEnabled = false;
-          this.settings.autofractionEnabled = false;
-          this.settings.matrixShortcutsEnabled = false;
-          this.settings.taboutEnabled = false;
-          this.settings.autoEnlargeBrackets = false;
-          yield this.saveSettings();
-        })
-      });
     };
     this.onKeydown = (event, view) => {
       const success = this.handleKeydown(event.key, event.shiftKey, event.ctrlKey || event.metaKey, view);
@@ -8243,432 +8679,85 @@ var LatexSuitePlugin = class extends import_obsidian7.Plugin {
       const s = view.state.selection;
       const pos = s.main.to;
       const ranges = Array.from(s.ranges).reverse();
-      const withinEquation = isWithinEquation(view);
+      const withinEquation = isWithinEquation(view.state);
       let withinMath = false;
       if (withinEquation)
-        withinMath = !isInsideEnvironment(view, pos, { openSymbol: "\\text{", closeSymbol: "}" });
+        withinMath = !(isInsideEnvironment(view, pos, { openSymbol: "\\text{", closeSymbol: "}" }) || isInsideEnvironment(view, pos, { openSymbol: "\\tag{", closeSymbol: "}" }));
       let success = false;
       if (this.settings.snippetsEnabled) {
         if (!ctrlKey) {
           try {
-            success = this.runSnippets(view, key, withinMath, ranges);
+            success = runSnippets(view, key, withinMath, ranges, this);
             if (success)
               return true;
           } catch (e) {
-            this.snippetManager.clearSnippetQueue();
+            clearSnippetQueue(view);
             console.error(e);
           }
         }
       }
-      const shouldTaboutByCloseBracket = this.shouldTaboutByCloseBracket(view, key);
-      if (key === "Tab" || shouldTaboutByCloseBracket) {
+      const taboutByCloseBracket = shouldTaboutByCloseBracket(view, key);
+      if (key === "Tab" || taboutByCloseBracket) {
         success = this.handleTabstops(view);
         if (success)
           return true;
       }
       if (this.settings.autofractionEnabled && withinMath) {
         if (key === "/") {
-          success = this.runAutoFraction(view, ranges);
+          success = runAutoFraction(view, ranges, this);
           if (success)
             return true;
         }
       }
       if (this.settings.matrixShortcutsEnabled && withinMath) {
         if (["Tab", "Enter"].contains(key)) {
-          success = this.runMatrixShortcuts(view, key, shiftKey, pos);
+          success = runMatrixShortcuts(view, key, shiftKey, pos, this.matrixShortcutsEnvNames);
           if (success)
             return true;
         }
       }
       if (this.settings.taboutEnabled) {
         if (key === "Tab") {
-          success = this.tabout(view, withinEquation);
+          success = tabout(view, withinEquation);
           if (success)
             return true;
         }
       }
       return false;
     };
-    this.checkSnippet = (snippet, effectiveLine, range, sel) => {
-      let triggerPos;
-      let trigger = snippet.trigger;
-      trigger = this.insertSnippetVariables(trigger);
-      let replacement = snippet.replacement;
-      if (snippet.replacement.contains("${VISUAL}")) {
-        if (!sel)
-          return null;
-        if (!(effectiveLine.slice(-trigger.length) === trigger))
-          return null;
-        triggerPos = range.from;
-        replacement = snippet.replacement.replace("${VISUAL}", sel);
-      } else if (sel) {
-        return null;
-      } else if (!snippet.options.contains("r")) {
-        if (!(effectiveLine.slice(-trigger.length) === trigger))
-          return null;
-        triggerPos = effectiveLine.length - trigger.length;
-      } else {
-        const regex = new RegExp(trigger + "$");
-        const result = regex.exec(effectiveLine);
-        if (!result) {
-          return null;
-        }
-        for (let i = 1; i < result.length; i++) {
-          replacement = replacement.replaceAll("[[" + (i - 1) + "]]", result[i]);
-        }
-        triggerPos = result.index;
-      }
-      return { triggerPos, replacement };
-    };
-    this.insertSnippetVariables = (trigger) => {
-      for (const [variable, replacement] of Object.entries(SNIPPET_VARIABLES)) {
-        trigger = trigger.replace(variable, replacement);
-      }
-      return trigger;
-    };
-    this.runSnippets = (view, key, withinMath, ranges) => {
-      this.shouldAutoEnlargeBrackets = false;
-      for (const range of ranges) {
-        this.runSnippetCursor(view, key, withinMath, range);
-      }
-      const success = this.snippetManager.expandSnippets(view);
-      if (this.shouldAutoEnlargeBrackets) {
-        this.autoEnlargeBrackets(view);
-      }
-      return success;
-    };
-    this.runSnippetCursor = (view, key, withinMath, range) => {
-      const { from, to } = range;
-      const sel = view.state.sliceDoc(from, to);
-      for (const snippet of this.snippets) {
-        let effectiveLine = view.state.sliceDoc(0, to);
-        if (snippet.options.contains("m") && !withinMath) {
-          continue;
-        } else if (snippet.options.contains("t") && withinMath) {
-          continue;
-        }
-        if (snippet.options.contains("A") || snippet.replacement.contains("${VISUAL}")) {
-          if (!(key.length === 1))
-            continue;
-          effectiveLine += key;
-        } else if (!(key === "Tab")) {
-          continue;
-        }
-        if (snippet.trigger in EXCLUSIONS) {
-          const environment = EXCLUSIONS[snippet.trigger];
-          if (isInsideEnvironment(view, to, environment))
-            continue;
-        }
-        const result = this.checkSnippet(snippet, effectiveLine, range, sel);
-        if (result === null)
-          continue;
-        const triggerPos = result.triggerPos;
-        if (snippet.options.contains("w")) {
-          const prevChar = view.state.sliceDoc(triggerPos - 1, triggerPos);
-          const nextChar = view.state.sliceDoc(to, to + 1);
-          const wordDelimiters = this.settings.wordDelimiters.replace("\\n", "\n");
-          const prevCharIsWordDelimiter = wordDelimiters.contains(prevChar);
-          const nextCharIsWordDelimiter = wordDelimiters.contains(nextChar);
-          if (!(prevCharIsWordDelimiter && nextCharIsWordDelimiter)) {
-            continue;
-          }
-        }
-        let replacement = result.replacement;
-        if (withinMath) {
-          let spaceIndex = 0;
-          if (replacement.endsWith(" ")) {
-            spaceIndex = -1;
-          } else {
-            const lastThreeChars = replacement.slice(-3);
-            const lastChar = lastThreeChars.slice(-1);
-            if (lastThreeChars.slice(0, 2) === " $" && !isNaN(parseInt(lastChar))) {
-              spaceIndex = -3;
-            }
-          }
-          if (spaceIndex != 0) {
-            const inlineMath = isWithinInlineEquation(view);
-            if (inlineMath) {
-              if (spaceIndex === -1) {
-                replacement = replacement.trimEnd();
-              } else if (spaceIndex === -3) {
-                replacement = replacement.slice(0, -3) + replacement.slice(-2);
-              }
-            }
-          }
-        }
-        const start2 = triggerPos;
-        this.snippetManager.queueSnippet({ from: start2, to, insert: replacement, keyPressed: key });
-        const containsTrigger = this.autoEnlargeBracketsTriggers.some((word) => replacement.contains("\\" + word));
-        if (containsTrigger)
-          this.shouldAutoEnlargeBrackets = true;
-        return true;
-      }
-      return false;
-    };
     this.handleTabstops = (view) => {
-      const success = this.snippetManager.consumeAndGotoNextTabstop(view);
+      const success = consumeAndGotoNextTabstop(view);
       return success;
-    };
-    this.runAutoFraction = (view, ranges) => {
-      for (const range of ranges) {
-        this.runAutoFractionCursor(view, range);
-      }
-      const success = this.snippetManager.expandSnippets(view);
-      if (success) {
-        this.autoEnlargeBrackets(view);
-      }
-      return success;
-    };
-    this.runAutoFractionCursor = (view, range) => {
-      const { from, to } = range;
-      for (const env of this.autofractionExcludedEnvs) {
-        if (isInsideEnvironment(view, to, env)) {
-          return false;
-        }
-      }
-      const result = getEquationBounds(view);
-      if (!result)
-        return false;
-      const eqnStart = result.start;
-      let curLine = view.state.sliceDoc(0, to);
-      let start2 = eqnStart;
-      if (from != to) {
-        start2 = from;
-      } else {
-        const regex = new RegExp("(" + SNIPPET_VARIABLES["${GREEK}"] + ") ([^ ])", "g");
-        curLine = curLine.replace(regex, "$1#$2");
-        for (let i = curLine.length - 1; i >= eqnStart; i--) {
-          const curChar = curLine.charAt(i);
-          if ([")", "]", "}"].contains(curChar)) {
-            const closeBracket = curChar;
-            const openBracket = getOpenBracket(closeBracket);
-            const j = findMatchingBracket(curLine, i, openBracket, closeBracket, true);
-            if (j === -1)
-              return false;
-            i = j;
-            if (i < eqnStart) {
-              start2 = eqnStart;
-              break;
-            }
-          }
-          if (" $([{\n".concat(this.settings.autofractionBreakingChars).contains(curChar)) {
-            start2 = i + 1;
-            break;
-          }
-        }
-      }
-      let numerator = view.state.sliceDoc(start2, to);
-      if (numerator === "")
-        return false;
-      if (curLine.charAt(start2) === "(" && curLine.charAt(to - 1) === ")") {
-        numerator = numerator.slice(1, -1);
-      }
-      const replacement = "\\frac{" + numerator + "}{$0}$1";
-      this.snippetManager.queueSnippet({ from: start2, to, insert: replacement, keyPressed: "/" });
-      return true;
-    };
-    this.autoEnlargeBrackets = (view) => {
-      if (!this.settings.autoEnlargeBrackets)
-        return;
-      const result = getEquationBounds(view);
-      if (!result)
-        return false;
-      const { start: start2, end: end2 } = result;
-      const text = view.state.doc.toString();
-      const left2 = "\\left";
-      const right2 = "\\right";
-      for (let i = start2; i < end2; i++) {
-        const brackets2 = { "(": ")", "[": "]", "\\{": "\\}", "\\langle": "\\rangle", "\\lvert": "\\rvert" };
-        const openBrackets = Object.keys(brackets2);
-        let found = false;
-        let open = "";
-        for (const openBracket of openBrackets) {
-          if (text.slice(i, i + openBracket.length) === openBracket) {
-            found = true;
-            open = openBracket;
-            break;
-          }
-        }
-        if (!found)
-          continue;
-        const bracketSize = open.length;
-        const close = brackets2[open];
-        const j = findMatchingBracket(text, i, open, close, false, end2);
-        if (j === -1)
-          continue;
-        if (text.slice(i - left2.length, i) === left2 && text.slice(j - right2.length, j) === right2)
-          continue;
-        const bracketContents = text.slice(i + 1, j);
-        const containsTrigger = this.autoEnlargeBracketsTriggers.some((word) => bracketContents.contains("\\" + word));
-        if (!containsTrigger) {
-          i = j;
-          continue;
-        }
-        this.snippetManager.queueSnippet({ from: i, to: i + bracketSize, insert: left2 + open + " " });
-        this.snippetManager.queueSnippet({ from: j, to: j + bracketSize, insert: " " + right2 + close });
-      }
-      this.snippetManager.expandSnippets(view);
-    };
-    this.tabout = (view, withinEquation) => {
-      if (!withinEquation)
-        return false;
-      const pos = view.state.selection.main.to;
-      const result = getEquationBounds(view);
-      if (!result)
-        return false;
-      const end2 = result.end;
-      const d = view.state.doc;
-      const text = d.toString();
-      const rangle = "\\rangle";
-      for (let i = pos; i < end2; i++) {
-        if (["}", ")", "]", ">", "|"].contains(text.charAt(i))) {
-          setCursor(view, i + 1);
-          return true;
-        } else if (text.slice(i, i + rangle.length) === rangle) {
-          setCursor(view, i + rangle.length);
-          return true;
-        }
-      }
-      const textBtwnCursorAndEnd = d.sliceString(pos, end2);
-      const atEnd = textBtwnCursorAndEnd.trim().length === 0;
-      if (!atEnd)
-        return false;
-      const inlineMath = d.sliceString(end2, end2 + 2) != "$$";
-      if (inlineMath) {
-        setCursor(view, end2 + 1);
-      } else {
-        const dollarLine = d.lineAt(end2 + 2);
-        if (dollarLine.number === d.lines) {
-          replaceRange(view, dollarLine.to, dollarLine.to, "\n");
-        }
-        setCursor(view, dollarLine.to + 1);
-        const line = d.lineAt(pos);
-        replaceRange(view, line.from, line.to, line.text.trim());
-      }
-      return true;
-    };
-    this.runMatrixShortcuts = (view, key, shiftKey, pos) => {
-      let isInsideAnEnv = false;
-      for (const envName of this.matrixShortcutsEnvNames) {
-        const env = { openSymbol: "\\begin{" + envName + "}", closeSymbol: "\\end{" + envName + "}" };
-        isInsideAnEnv = isInsideEnvironment(view, pos, env);
-        if (isInsideAnEnv)
-          break;
-      }
-      if (!isInsideAnEnv)
-        return false;
-      if (key === "Tab") {
-        view.dispatch(view.state.replaceSelection(" & "));
-        return true;
-      } else if (key === "Enter") {
-        if (shiftKey) {
-          const d = view.state.doc;
-          const nextLineNo = d.lineAt(pos).number + 1;
-          const nextLine = d.line(nextLineNo);
-          setCursor(view, nextLine.to);
-        } else {
-          view.dispatch(view.state.replaceSelection(" \\\\\n"));
-        }
-        return true;
-      } else {
-        return false;
-      }
-    };
-    this.shouldTaboutByCloseBracket = (view, keyPressed) => {
-      const sel = view.state.selection.main;
-      if (!sel.empty)
-        return;
-      const pos = sel.from;
-      const c = getCharacterAtPos(view, pos);
-      const brackets2 = [")", "]", "}"];
-      if (c === keyPressed && brackets2.contains(c)) {
-        return true;
-      } else {
-        return false;
-      }
     };
   }
   onload() {
     return __async(this, null, function* () {
-      var _a;
       yield this.loadSettings();
-      this.registerEditorExtension(import_state9.Prec.highest(import_view11.keymap.of([
-        {
-          key: "Tab",
-          run: (view) => {
-            const success = this.handleKeydown("Tab", false, false, view);
-            return success;
-          }
-        },
-        {
-          key: "Enter",
-          run: (view) => {
-            const success = this.handleKeydown("Enter", false, false, view);
-            return success;
-          },
-          shift: (view) => {
-            const success = this.handleKeydown("Enter", true, false, view);
-            return success;
-          }
-        }
-      ])));
-      if ((_a = this.app.vault.config) == null ? void 0 : _a.legacyEditor) {
-        const message = "Obsidian Latex Suite: This plugin does not support the legacy editor. Switch to Live Preview mode to use this plugin.";
-        new import_obsidian7.Notice(message, 1e5);
-        console.log(message);
-        return;
-      }
       this.addSettingTab(new LatexSuiteSettingTab(this.app, this));
-      this.snippetManager = new SnippetManager();
-      this.registerEditorExtension(markerStateField);
-      this.registerEditorExtension(snippetInvertedEffects);
-      this.registerEditorExtension(import_state9.Prec.highest(import_view11.EditorView.domEventHandlers({
+      this.legacyEditorWarning();
+      this.registerEditorExtension(import_state11.Prec.highest(import_view10.EditorView.domEventHandlers({
         "keydown": this.onKeydown
       })));
-      this.registerEditorExtension(import_view11.EditorView.updateListener.of((update) => {
-        if (update.docChanged) {
-          this.handleDocChange();
-        }
-        if (update.selectionSet) {
-          const pos = update.state.selection.main.head;
-          this.handleCursorActivity(update.view, pos);
-        }
-        this.handleUndoRedo(update);
-      }));
-      this.registerEditorExtension((0, import_view11.tooltips)({ position: "absolute" }));
+      this.registerEditorExtension([markerStateField, tabstopsStateField, snippetQueueStateField, snippetInvertedEffects]);
+      this.registerEditorExtension(import_view10.EditorView.updateListener.of(this.handleUpdate));
+      this.registerEditorExtension((0, import_view10.tooltips)({ position: "absolute" }));
       this.registerEditorExtension(this.editorExtensions);
+      this.registerEvent(this.app.vault.on("modify", (file) => onFileChange(this, file)));
+      this.registerEvent(this.app.vault.on("delete", (file) => onFileDelete(this, file)));
+      this.registerEvent(this.app.vault.on("create", (file) => onFileCreate(this, file)));
       this.addEditorCommands();
-      this.registerEvent(this.app.vault.on("modify", this.onFileChange.bind(this)));
-      this.registerEvent(this.app.vault.on("delete", (file) => {
-        const snippetDir = this.app.vault.getAbstractFileByPath(this.settings.snippetsFileLocation);
-        const isFolder = snippetDir instanceof import_obsidian7.TFolder;
-        if (file instanceof import_obsidian7.TFile && (isFolder && file.path.contains(snippetDir.path))) {
-          debouncedSetSnippetsFromFileOrFolder(this);
-        }
-      }));
-      this.registerEvent(this.app.vault.on("create", (file) => {
-        if (file instanceof import_obsidian7.TFile && this.fileIsInSnippetsFolder(file)) {
-          debouncedSetSnippetsFromFileOrFolder(this);
-        }
-      }));
     });
   }
   onunload() {
-    this.snippetManager.onunload();
   }
-  onFileChange(file) {
-    return __async(this, null, function* () {
-      if (!this.settings.loadSnippetsFromFile) {
-        return;
-      }
-      if (file.path === this.settings.snippetsFileLocation || this.fileIsInSnippetsFolder(file)) {
-        try {
-          yield debouncedSetSnippetsFromFileOrFolder(this);
-        } catch (e) {
-          new import_obsidian7.Notice("Failed to load snippets.", 5e3);
-        }
-      }
-    });
+  legacyEditorWarning() {
+    var _a;
+    if ((_a = this.app.vault.config) == null ? void 0 : _a.legacyEditor) {
+      const message = "Obsidian Latex Suite: This plugin does not support the legacy editor. Switch to Live Preview mode to use this plugin.";
+      new import_obsidian8.Notice(message, 1e5);
+      console.log(message);
+      return;
+    }
   }
   enableExtension(extension) {
     this.editorExtensions.push(extension);
@@ -8697,7 +8786,7 @@ var LatexSuitePlugin = class extends import_obsidian7.Plugin {
         this.enableExtension(colorPairedBracketsPluginLowestPrec);
       if (this.settings.highlightCursorBracketsEnabled)
         this.enableExtension(highlightCursorBracketsPlugin.extension);
-      if (this.settings.inlineMathPreviewEnabled) {
+      if (this.settings.mathPreviewEnabled) {
         this.enableExtension(cursorTooltipField);
         this.enableExtension(cursorTooltipBaseTheme);
       }
