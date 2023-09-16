@@ -30,3 +30,104 @@ a=2    b=2    d=0
 $log_b~a=1~>~d=0$
 那么时间复杂度为：$O(N)$
 
+# 2  归并排序
+```c
+void merge(int arr[],int L,int R,int M);
+//递归
+void process(int arr[],int L,int R){
+    if(L==R){
+        return;
+    }
+    int mid=L+((R-L)>>1);
+    process(arr,L,mid);
+    process(arr,mid+1,R);
+    merge(arr,L,R,mid);
+}
+
+//归并
+void merge(int arr[],int L,int R,int M){
+    int* help=(int*)malloc((R-L+1)*sizeof(int));
+    int i=0;
+    int p1=L,p2=M+1;
+    while(p1<=M && p2<=R){
+        help[i++]=arr[p1]<=arr[p2]?arr[p1++]:arr[p2++];
+    }
+    while(p1<=M){
+        help[i++]=arr[p1++];
+    }
+    while(p2<=R){
+        help[i++]=arr[p2++];
+    }
+    for(int j=0;j<(R-L+1);j++){
+        arr[L+j]=help[j];
+    }
+    return;
+}
+```
+
+## 2.1  归并排序的扩展
+### 2.1.1  小和问题和逆序对问题
+#### 2.1.1.1  小和问题
+在一个数组中，每一个数左边比当前数小的数累加起来，叫做这个数组的小和。求一个数组的小和。
+例子:[1,3,4,2,5]
+1左边比1小的数，没有;
+3左边比3小的数，1;
+4左边比4小的数，1、3;
+2左边比2小的数，1;
+5左边比5小的数，1、3、4、2;
+所以小和为1+1+3+1+1+3+4+2=16
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void merge(int arr[], int L, int R, int M, int* smallSum);
+// 递归
+void process(int arr[], int L, int R, int* smallSum) {
+    if (L == R) {
+        return;
+    }
+    int mid = L + ((R - L) >> 1);
+    process(arr, L, mid, smallSum);
+    process(arr, mid + 1, R, smallSum);
+    merge(arr, L, R, mid, smallSum);
+}
+
+// 归并并计算小和
+void merge(int arr[], int L, int R, int M, int* smallSum) {
+    int* help = (int*)malloc((R - L + 1) * sizeof(int));
+    int i = 0;
+    int p1 = L, p2 = M + 1;
+    while (p1 <= M && p2 <= R) {
+        if (arr[p1] < arr[p2]) {
+            help[i] = arr[p1];
+            *smallSum += (R - p2 + 1) * arr[p1];
+            i++;
+            p1++;
+        } else {
+            help[i++] = arr[p2++];
+        }
+    }
+    while (p1 <= M) {
+        help[i++] = arr[p1++];
+    }
+    while (p2 <= R) {
+        help[i++] = arr[p2++];
+    }
+    for (int j = 0; j < (R - L + 1); j++) {
+        arr[L + j] = help[j];
+    }
+    free(help);
+    return;
+}
+
+int main() {
+    int smallSum = 0;
+    int arr[] = {1, 3, 4, 2, 5};
+    size_t length = sizeof(arr) / sizeof(arr[0]);
+    process(arr, 0, length - 1, &smallSum);
+    printf("\n%d", smallSum);
+    return 0;
+}
+```
+#### 2.1.1.2  逆序对问题
+在一个数组中，左边的数如果比右边的数大，则这两个数构成一个逆序对，请打印所有逆序对。
