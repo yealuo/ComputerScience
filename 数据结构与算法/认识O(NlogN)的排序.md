@@ -130,4 +130,145 @@ int main() {
 }
 ```
 #### 2.1.1.2  逆序对问题
-在一个数组中，左边的数如果比右边的数大，则这两个数构成一个逆序对，请打印所有逆序对。
+在一个数组中，左边的数如果比右边的数大，则这两个数构成一个逆序对，请打印所有逆序对的数量。
+```c
+// 归并并计算逆序对
+int merge(int arr[], int L, int R, int M) {
+    int* help = (int*)malloc((R - L + 1) * sizeof(int));
+    int i = 0, result = 0;
+    int p1 = L, p2 = M + 1;
+    while (p1 <= M && p2 <= R) {
+        if (arr[p1] > arr[p2]) {
+            help[i] = arr[p1];
+            result += (R - p2 + 1);
+            i++;
+            p1++;
+        } else {
+            help[i++] = arr[p2++];
+        }
+    }
+    while (p1 <= M) {
+        help[i++] = arr[p1++];
+    }
+    while (p2 <= R) {
+        help[i++] = arr[p2++];
+    }
+    for (int j = 0; j < (R - L + 1); j++) {
+        arr[L + j] = help[j];
+    }
+    free(help);
+    return result;
+}
+
+int process(int arr[], int L, int R) {
+    if (L == R) {
+        return 0;
+    }
+    int mid = L + ((R - L) >> 1);
+    return process(arr, L, mid) + process(arr, mid + 1, R) +
+           merge(arr, L, R, mid);
+}
+```
+
+# 3  快速排序
+## 3.1  荷兰国旗问题
+1. 给定一个数组arr，和一个数num，请把小于等于num的数放在数组的左边，大于num的数放在数组的右边。要求额外空间复杂度0(1)，时间复杂度0(N)
+```c
+ void partitionArray(int* arr,size_t length,int num){
+    int l=0,r=0;
+    int temp;
+    for(;r<length;r++){
+        if(arr[r]<=num){
+            temp=arr[l];
+            arr[l]=arr[r];
+            arr[r]=temp;
+            l++;
+        }
+    }
+    return;
+ }
+```
+
+2. 给定一个数组arr，和一个数num，请把小于num的数放在数组的左边，等于num的数放在数组的中间，大于num的数放在数组的右边。要求额外空间复杂度0(1)，时间复杂度0(N)
+```c
+void partitionArray(int* arr, size_t length, int num) {
+    int l = 0, r = length - 1, i = 0;
+    int temp;
+    while (i <= r) {
+        if (arr[i] < num) {
+            temp = arr[l];
+            arr[l] = arr[i];
+            arr[i] = temp;
+            i++;
+            l++;
+        } else if (arr[i] == num) {
+            i++;
+        } else {
+            temp = arr[r];
+            arr[r] = arr[i];
+            arr[i] = temp;
+            r--;
+        }
+    }
+    return;
+}
+```
+
+## 3.2  快速排序
+### 3.2.1  快速排序1.0
+```c
+void quickSort1(int* arr,int L,int R){
+    if(L>=R){
+        return;
+    }
+    int l=L,r=L,temp;
+    for(;r<R;r++){
+        if(arr[r]<=arr[R]){
+            temp=arr[l];
+            arr[l]=arr[r];
+            arr[r]=temp;
+            l++;
+        }
+    }
+    temp=arr[l];
+    arr[l]=arr[R];
+    arr[R]=temp;
+    quickSort1(arr,L,l-1);
+    quickSort1(arr,l+1,R);
+    return;
+}
+```
+
+### 3.2.2  快速排序2.0
+```c
+void quickSort2(int* arr,int L,int R){
+    if(L>=R){
+        return;
+    }
+    int l=L,r=R-1,i=L,temp;
+    while(i<=r){
+        if(arr[i]<arr[R]){
+            temp=arr[l];
+            arr[l]=arr[i];
+            arr[i]=temp;
+            i++;
+            l++;
+        }else if(arr[i]==arr[R]){ 
+            i++;
+        }else{
+            temp=arr[r];
+            arr[r]=arr[i];
+            arr[i]=temp;
+            r--;
+        }
+    }
+    temp=arr[i];
+    arr[i]=arr[R];
+    arr[R]=temp;
+    quickSort2(arr,L,l-1);
+    quickSort2(arr,i+1,R);
+    return;
+}
+```
+
+
