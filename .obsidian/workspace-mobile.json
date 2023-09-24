@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "计算机网络/第一章 计算机网络和Internet/04 网络核心部分.md",
-                "mode": "source",
+                "file": "计算机网络/第三章 运输层/04 可靠数据传输原理.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "计算机网络/第一章 计算机网络和Internet/04 网络核心部分.md",
+            "file": "计算机网络/第三章 运输层/04 可靠数据传输原理.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "计算机网络/第一章 计算机网络和Internet/04 网络核心部分.md",
+            "file": "计算机网络/第三章 运输层/04 可靠数据传输原理.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "计算机网络/第一章 计算机网络和Internet/04 网络核心部分.md"
+            "file": "计算机网络/第三章 运输层/04 可靠数据传输原理.md"
           }
         }
       }
@@ -123,6 +123,8 @@
   },
   "active": "88808686995aa621",
   "lastOpenFiles": [
+    "计算机网络/第一章 计算机网络和Internet/04 网络核心部分.md",
+    "计算机网络/第三章 运输层/04 可靠数据传输原理.md",
     "计算机网络/第一章 计算机网络和Internet/05 Internet 主干 or ISP 的结构组成.md",
     "计算机网络/第一章 计算机网络和Internet/03 网络边缘部分.md"
   ]
